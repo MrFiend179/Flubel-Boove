@@ -28,3 +28,24 @@
 | Versions  | Windows| Linux Os | Mac Os   |
 |-----------|--------|-------|----- |
 | v1.0      |     ✅   |    ❌   |  ❌    |
+
+
+# ScreenShots
+## Image 1:
+![App Screenshot](https://pbs.twimg.com/media/FgQEgCwXgAAdJpv?format=png&name=900x900)
+
+## Image 2:
+![App Screenshot](https://pbs.twimg.com/media/FgQEgCtWQAQlUQw?format=png&name=900x900)
+
+# Run Shell Script
+In order to run the shell script follow the following steps:
+
+Open Terminal go to the directory in which the **installer.sh** file is located, You can do this by
+```bash
+  cd <path_to_file>
+```
+Then run the following command and u will be guided rest by the file
+```bash
+  bash installer.sh
+```
+
