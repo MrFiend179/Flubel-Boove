@@ -1,0 +1,52 @@
+{
+  "name": "flubel-minecraft-bot",
+  "version": "1.0.0",
+  "description": "A minecraft botting app that makes a players instance and provides utilities such as afk,autoarmor and a lot more",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "winx64": "electron-builder build --win --x64",
+    "winx86": "electron-builder build --win --ia32",
+    "linux64": "electron-builder build --linux --x64",
+    "linux86": "electron-builder build --linux --ia32",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fiend <undefined@gmail.com>",
+  "maintainer": "Fiend",
+  "license": "ISC",
+  "dependencies": {
+    "electron-reload": "^2.0.0-alpha.1",
+    "ip": "^1.1.8",
+    "minecraft-protocol": "^1.36.1",
+    "mineflayer": "^4.4.0",
+    "mineflayer-antiafk": "^1.1.1",
+    "mineflayer-armor-manager": "^1.4.2",
+    "mineflayer-auto-eat": "^2.3.3",
+    "mineflayer-gui": "^2.1.2",
+    "mineflayer-pathfinder": "^2.4.0",
+    "network-speed": "^2.1.1",
+    "systeminformation": "^5.12.7"
+  },
+  "devDependencies": {
+    "electron": "^21.1.0",
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "flubel.naz",
+    "productName": "Flubel MinecraftBot",
+    "copyright": "Copyright © 2022 Fiend",
+    "win": {
+      "target": "portable",
+      "publisherName": "Fiend",
+      "icon": "src/icoon.png"
+    },
+    "linux": {
+      "target": [
+        "deb"
+      ],
+      "icon": "src/icoon.png",
+      "category": "Utility"
+    }
+  }  
+}

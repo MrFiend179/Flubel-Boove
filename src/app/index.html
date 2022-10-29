@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Flubel</title>
+</head>
+<body>
+    <section class="mainapp" class="move-area">
+        <div id="nav">
+            <span id="title">Flubel MinecraftBot</span>
+            <span id="minimizeApp">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#7F8487" stroke="#7f8487" stroke-linecap="round" stroke-width="2" d="M20 12H4"/></svg>
+            </span>
+            <span id="closeBtn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="#7F8487" d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"/></svg>
+            </span>
+        </div>
+       <!--<button onclick="tst()">click to enable bot</button>
+        <button id="botquit">Quit</button>
+        <form id="form" onsubmit="return false;">
+            <input style=" top:10%; left:5%; width:40%;" type="text" id="userInput" />
+            <input style=" top:20%; left:5%; width:40%; background-color: gray;" type="text" id="userInputport" />
+            <input style=" top:10%; left:5%; width:40%;" type="submit" onclick="tst();" />
+        </form>
+        <form id="form1" onsubmit="return false;">
+            <input style=" top:20%; left:5%; width:40%;" type="text" id="userInputmsg" />
+            <input style=" top:400px; left:5%; width:40%;" type="submit" id="msgsend"/>
+        </form>
+        <select name="membership" id="membership">
+            <option >flutstb</option>
+            <option >sassyaf</option>
+            <option>uwuuwu</option>
+            <option >araara</option>
+          </select>
+       <span id="bh">Data</span>-->
+          <div id="bos"></div>
+            <div id="network">
+                <div id="inticn"><svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><g fill="white"><path fill-rule="evenodd" d="M1.25 10a8.75 8.75 0 1 0 17.5 0a8.75 8.75 0 0 0-17.5 0Zm16 0a7.25 7.25 0 1 1-14.5 0a7.25 7.25 0 0 1 14.5 0Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M6.25 10c0 4.522 1.491 8.25 3.75 8.25s3.75-3.728 3.75-8.25S12.259 1.75 10 1.75S6.25 5.478 6.25 10Zm6 0c0 3.762-1.195 6.75-2.25 6.75S7.75 13.762 7.75 10S8.945 3.25 10 3.25s2.25 2.988 2.25 6.75Z" clip-rule="evenodd"/><path d="m3.602 5.467l1.006-1.112c.1.09.209.18.325.267c1.271.952 3.3 1.54 5.515 1.54c1.891 0 3.652-.427 4.931-1.158c.308-.176.582-.367.819-.57l.974 1.141a6.73 6.73 0 0 1-1.048.73c-1.516.868-3.534 1.356-5.676 1.356c-2.522 0-4.865-.678-6.415-1.839a6.063 6.063 0 0 1-.431-.355Zm0 9.082l1.006 1.112c.1-.091.209-.18.325-.267c1.271-.952 3.3-1.54 5.515-1.54c1.891 0 3.652.427 4.931 1.158c.308.176.582.367.819.57l.974-1.141a6.841 6.841 0 0 0-1.048-.73c-1.516-.868-3.534-1.356-5.676-1.356c-2.522 0-4.865.678-6.415 1.839a6.06 6.06 0 0 0-.431.355ZM1.75 10.75v-1.5h16.5v1.5H1.75Z"/></g></svg></div>
+                <div id="pingms">
+                    <span id="pingt">Ping</span><span id="pingd">N/A</span>
+                </div>
+                <div id="ssid">
+                    <span id="ssidn">Null</span>
+                </div>
+                <div id="ntype">
+                    <span id="typet">Null</span>
+                </div>
+                <div id="intint">
+                    <svg id="infoi" xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" d="M12 7h.01"/><path stroke-linecap="round" stroke-linejoin="round" d="M10 11h2v5m-2 0h4"/></g></svg>
+                </div>
+            </div>
+        <div id="chat">
+            <span id="cn">Minecraft Chat</span>
+            <div id="chatmsg">
+            <div id="mchat">
+            </div>
+        </div>
+        <form name="chatmc" id="chatform" onsubmit="return false;">
+            <input type="text" id="userInputmsg" />
+            <input type="submit" id="msgsend" onclick="clrchat()"/>
+        </form>
+       </div>
+       <div id="botinv">
+        <span id="invt">Hotbar Items</span>
+        <div id="invitem">
+            <div id="sltno">
+                <span id="slt36">36.</span>
+                <span id="slt37">37.</span>
+                <span id="slt38">38.</span>
+                <span id="slt39">39.</span>
+                <span id="slt40">40.</span>
+                <span id="slt41">41.</span>
+                <span id="slt42">42.</span>
+                <span id="slt43">43.</span>
+                <span id="slt44">44.</span>
+            </div>
+            <div id="itmno">
+                <span id="item36"></span>
+                <span id="item37"></span>
+                <span id="item38"></span>
+                <span id="item39"></span>
+                <span id="item40"></span>
+                <span id="item41"></span>
+                <span id="item42"></span>
+                <span id="item43"></span>
+                <span id="item44"></span>
+            </div>
+        </div>
+       </div>
+       <div id="playerlist">
+            <span id="pj">Players List</span>
+            <div id="plist"></div>
+       </div>
+       <div id="botinfo">
+        <form id="form" onsubmit="return false;">
+            <div id="title"><span id="host">Host</span>&nbsp;<span id="port">Port</span></div>
+            <input spellcheck="false" type="text" class="space" id="hostin"><input spellcheck="false" type="number" id="portin">
+            <div id="hosterr"><span id="errtxth">no host found</span><span id="errtxtp">no port found</span></div>
+            <!--<span id="username">Username</span><input type="text" class="username" spellcheck="false" id="userin">-->
+            <div id="title1"><span id="username">Username/Email</span><span id="password">Password</span><span id="version">Version</span></div>
+            <input type="text" class="username" spellcheck="false" id="userin" maxlength="15"><input type="text" class="password" spellcheck="false" id="passin" maxlength="20">
+            <select name="mcversion" id="verin">
+                <option id="opt">1.18.2</option>
+                <option id="opt">1.18.1</option>
+                <option id="opt">1.18</option>
+                <option id="opt">1.17.1</option>
+                <option id="opt">1.16.5</option>
+              </select>
+              <div id="usererr"><span id="errtxt">no username found</span></div>
+                <div id="bcbtns">
+                    <span></span><span id="rcb" onclick="join()">Reconnect</span><span id="mbtn" onclick="join()">Start</span><span id="quit">Quit</span><span></span>
+                </div>
+        </form>
+            <div id="connect">
+                <span id="icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m2 12l5.25 5l2.625-3M8 12l5.25 5L22 7m-6 0l-3.5 4"/></svg></span>
+                &nbsp;<span id="status"></span>
+            </div>
+            <div id="bft">
+                <div id="bcred">
+                    <span id="bhnt">Health</span>
+                    <div id="bhn">
+                        <div id="hn">
+                            <span id="hnd"></span>
+                        </div>
+                        <div id="hnp">
+                            <img src="./icons/minehi-removebg-preview (2).png" width="32px" height="30px">
+                        </div>
+                    </div>
+                    <span id="bfnt">Food</span>
+                    <div id="bfn">
+                        <div id="fn">
+                            <span id="fnd"></span>
+                        </div>
+                        <div id="fnp">
+                            <img src="./icons/minefi-removebg-preview (2).png" height="32px" width="32px">
+                        </div>
+                    </div>
+                </div> 
+                <div id="winctrl">
+                    <div id="ttl">
+                        <span id="wincls">Close</span><span id="wino">Window Options</span><div id="valw"></div>
+                    </div>
+                    <div id="btl">
+                        <input type="number" id="winslt" maxlength="2">
+                        <span id="lbtn">L click</span>
+                        <span id="rbtn">R click</span>
+                        <!--<span id="winext"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504L738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512L828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496L285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512L195.2 285.696a64 64 0 0 1 0-90.496z"/></svg></span>-->
+                    </div>
+                </div>
+                <div id="afkb">
+                    <div id="tafkb"><span id="afkttl">Afk</span><div id="afkstat"></div></div>
+                    <div id="bafkb">    
+                        <label class="switch">
+                            <input type="checkbox" id="afkswt">
+                            <div class="slider"></div>
+                        </label>
+                    </div>    
+                </div>
+                <div id="btctrlphy">
+                    <div id="btctrltl"><span id="ctrlt">Control</span><div id="indphy"></div></div>
+                    <input type="text" id="pntp">
+                    <div id="btlphy">
+                        <span id="actphybtn">Go</span>
+                    </div>
+                </div>
+                <div id="utils">
+                    <div id="uttl"><span id="lt">Look</span><span id="wt">Walk</span></div>
+                    <label class="switchut0">
+                        <input type="checkbox" id="pllk">
+                        <div class="sliderut0"></div>
+                    </label>
+                    <label class="switchut1">
+                        <input type="checkbox" id="wlkp">
+                        <div class="sliderut1"></div>
+                    </label>
+                    <div id="utbl"><span id="blnk">Blinker</span><span id="armor">Armor</span></div>
+                    <label class="switchblnk">
+                        <input type="checkbox" id="w">
+                        <div class="sliderblnk"></div>
+                    </label>
+                    <label class="switcharmr">
+                        <input type="checkbox" id="armr">
+                        <div class="sliderarmr"></div>
+                    </label>
+                </div>
+              <!--<span id="ati">btn</span><span id="lclick">Lclick</span>-->
+              <span id="htbb">Hotbar</span><!--<span id="btinv"></span>--><span id="act">Activate Item</span>
+                <div id="bmsb">
+                    <span></span>
+                    <span id="btn1">1</span>
+                    <span id="btn2">2</span>
+                    <span id="btn3">3</span>
+                    <span id="btn4">4</span>
+                    <span id="btn5">5</span>
+                    <span id="btn6">6</span>
+                    <span id="btn7">7</span>
+                    <span id="btn8">8</span>
+                    <span id="btn9">9</span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <div id="owninfo">
+            <span id="closel"></span>
+            <div id="maininfo">
+                <!--<img src="./icons/logo4.png" height="70px" width="50px">-->
+                <div id="cmppfp">
+                    <div id="mnimg">
+                        <img src="./icons/logo4.png" height="70px" width="40px">
+                    </div>
+                </div>
+                <div id="prof">
+                    <div id="closeprof"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#545" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></svg></div>
+                    <span id="titlepro">Flubel by Fiend</span>
+                    <div id="info">
+                        A Minecraft app which makes a player instance and provides utilities such as afk , auto armor and many more.
+                    </div>
+                    <div id="check">
+                        <svg id="gthubc" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#55FF55"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417L5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></g></svg>
+                        <svg id="twtc" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#55FF55"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417L5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></g></svg>
+                        <svg id="webc" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#55FF55"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417L5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></g></svg>
+                        <svg id="ytc" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#55FF55"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417L5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></g></svg>
+                    </div>
+                    <div id="socials">
+                        <span></span>
+                        <svg id="github" onclick="copier()" xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><g clip-path="url(#svgIDa)"><path fill="white" fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" clip-rule="evenodd"/></g><defs><clipPath id="svgIDa"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g></svg>
+                        <span></span>
+                        <svg id="twitter" onclick="copier2()" xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578a9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25a13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568a4.692 4.692 0 0 1-2.104.08a4.661 4.661 0 0 0 4.352 3.234a9.348 9.348 0 0 1-5.786 1.995a9.5 9.5 0 0 1-1.112-.065a13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254c0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003Z"/></svg>
+                        <span></span>
+                        <svg id="website" onclick="copier3()" xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10"/><path stroke-linecap="round" stroke-linejoin="round" d="M13 2.05S16 6 16 12m-5 9.95S8 18 8 12c0-6 3-9.95 3-9.95M2.63 15.5H12m-9.37-7h18.74"/><path d="M21.879 17.917c.494.304.463 1.043-.045 1.101l-2.567.291l-1.151 2.312c-.228.459-.933.234-1.05-.334l-1.255-6.116c-.099-.48.333-.782.75-.525l5.318 3.271Z" clip-rule="evenodd"/></g></svg>
+                        <span></span>
+                        <svg id="youtube" onclick="copier4()" xmlns="http://www.w3.org/2000/svg" width="3.5rem" height="3.5rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="white" d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133l-232 135z"/></svg>
+                        <span></span>
+                    </div> 
+                    <div id="scn">
+                        <span id="gtn">Github</span>
+                        <span id="twtn">Twitter</span>
+                        <span id="webn">Website</span>
+                        <span id="ytn">Youtube</span>
+                    </div>   
+                </div>
+                <span id="mainidn1">Flubel</span>
+                <span id="mainidn">Flubel</span>
+
+            </div>
+            <input id="gthub" type="hidden" value="https://github.com/MrFiend179">
+            <input id="twt" type="hidden" value="https://twitter.com/Flubel_">
+            <input id="web" type="hidden" value="https://mrfiend179.github.io/flubel-webpage/">
+            <input id="yt" type="hidden" value="https://www.youtube.com/channel/UCha9zIeWFX58QASlKFW3CwQ">
+            <div id="sysinf">
+                <span id="platt">Platform</span>
+                <span id="hostn">Host</span>
+                <span id="distt">Distro</span>
+                <span id="archt">Architecture</span>
+                <span id="plat">Computing...</span>
+                <span id="hostt">Computing...</span>
+                <span id="dist">Computing...</span>
+                <span id="arch">Computing...</span>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
