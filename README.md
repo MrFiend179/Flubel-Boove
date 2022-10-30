@@ -33,7 +33,7 @@
 
 # ScreenShots
 ## Image 1:
-![App Screenshot](https://pbs.twimg.com/media/FgQEgCwXgAAdJpv?format=png&name=900x900)
+![App Screenshot](https://pbs.twimg.com/media/FgVMwcvXEAcIpxo?format=png&name=900x900)
 
 ## Image 2:
 ![App Screenshot](https://pbs.twimg.com/media/FgQEgCtWQAQlUQw?format=png&name=900x900)
