@@ -97,11 +97,12 @@ bot.on('spawn', ()=>{
 msgsend.addEventListener('click', ()=>{
     var msg = document.getElementById("userInputmsg").value
     bot.chat(msg)
-    setTimeout(
-    document.getElementById("userInputmsg").value = ''
-    ,1000)
     var scrollchat = document.getElementById('mchat')
     scrollchat.scrollBy(0,100)
+    var clrint = setInterval(()=>{
+        document.getElementById("userInputmsg").value = ''
+        clearInterval(clrint)
+    },1000)
 })
 bot.on('chat', (username,message)=>{
     var bc = message
