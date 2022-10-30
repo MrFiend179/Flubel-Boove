@@ -59,12 +59,29 @@ body{
 #minimizeApp:hover{
     background-color: rgb(75, 75, 75);
 }
+#apver{
+    position: fixed;
+    font-size: .6rem;
+    left: 30px;
+    top: 13px;
+    font-weight: 500;
+    color: rgb(131,131,131);
+}
+#smllogo{
+    position: fixed;
+    left: 10px;
+}
 #dats{
     color: white;
 }
 #title{
     color: rgb(131, 131, 131);
     font-size: .9rem;
+}
+#titlemain{
+    color: rgb(158, 158, 158);
+    font-size: .9rem;
+    font-weight: 400;
 }
 #chat{
     height: 50%;
@@ -173,7 +190,7 @@ input::-webkit-outer-spin-button,
 #password{
     color: rgb(131, 131, 131);
     font-weight: 600;
-    margin-left: 90px;
+    margin-left: 40px;
 }
 #version{
     color: rgb(131, 131, 131);
@@ -270,29 +287,38 @@ input::-webkit-outer-spin-button,
 }
 #userInputmsg{
     outline: none;
-    background-color: #141414;
+    background-color: #303030;
     border: none;
-    height: 25px;
-    border-radius: 3px;
-    width: 265px;
+    height: 27px;
+    border-radius: 7px;
+    width: 268px;
     position: fixed;
     right: 100px;
-    margin-top: 10px;
+    margin-top: 8px;
     color: white;
     padding-left: 7px;
     padding-right: 7px;
+    border: 1px solid #3f3f3f;
+}
+#userInputmsg:focus{
+    filter: drop-shadow(0px 0px 2px #646464);
+    transition: all 1s ease;
 }
 #msgsend{
     outline: none;
-    background-color: #141414;
+    background-color: #333;
     border: none;
     color: white;
+    font-weight: 500;
     width: 60px;
-    height: 30px;
+    height: 33px;
     position: fixed;
     right: 30px;
-    margin-top: 8px;
-    border-radius: 7px;
+    margin-top: 6px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 #msgsend:active{
     background-color: #252525;
@@ -1296,17 +1322,6 @@ input:checked + .sliderarmr:before {
 #btinv:active{
     background-color: #3f3f3f;
 }
-#invitem{
-    width: 95%;
-    height: 87%;
-    margin-top: 3px;
-    margin-left: 2.5%;
-    border-radius: 7px;
-    display: flex;
-    overflow-y: auto;
-    font-size: .9rem;
-    line-height: 1.5rem;
-}
 #sltno{
     display: flex;
     flex-direction: column;
@@ -1630,4 +1645,25 @@ input:checked + .sliderarmr:before {
     margin-left: 170px;
     width: 200px;
     text-align: center;
+}
+#invitem{
+    width: 95%;
+    height: 87%;
+    margin-top: 3px;
+    margin-left: 2.5%;
+    border-radius: 7px;
+    display: flex;
+    overflow-y: auto;
+    font-size: .9rem;
+    flex-direction: column;
+    line-height: 25px;
+    scroll-behavior: smooth;
+}
+#no36,#no37,#no38,#no39,#no40,#no41,#no42,#no43,#no44{
+    color: rgb(206, 206, 206);
+    font-weight: 500;
+    font-size: .9rem;
+}
+#item36,#item37,#item38,#item39,#item40,#item41,#item42,#item43,#item44{
+    color: white;
 }

@@ -5,13 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./index.js"></script>
+    <script defer src="./socials.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>Flubel</title>
 </head>
 <body>
     <section class="mainapp" class="move-area">
         <div id="nav">
-            <span id="title">Flubel MinecraftBot</span>
+            <img id="smllogo" src="./icons/smallogo.png" height="20px" width="20px">
+            <span id="apver">(v1.0.1)</span>
+            <span id="titlemain">Flubel MinecraftBot</span>
             <span id="minimizeApp">
                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#7F8487" stroke="#7f8487" stroke-linecap="round" stroke-width="2" d="M20 12H4"/></svg>
             </span>
@@ -33,7 +36,7 @@
         <select name="membership" id="membership">
             <option >flutstb</option>
             <option >sassyaf</option>
-            <option>uwuuwu</option>
+            <option></option>
             <option >araara</option>
           </select>
        <span id="bh">Data</span>-->
@@ -61,32 +64,46 @@
         </div>
         <form name="chatmc" id="chatform" onsubmit="return false;">
             <input type="text" id="userInputmsg" />
-            <input type="submit" id="msgsend" onclick="clrchat()"/>
+            <input type="submit" id="msgsend"/>
         </form>
        </div>
        <div id="botinv">
         <span id="invt">Hotbar Items</span>
         <div id="invitem">
-            <div id="sltno">
-                <span id="slt36">36.</span>
-                <span id="slt37">37.</span>
-                <span id="slt38">38.</span>
-                <span id="slt39">39.</span>
-                <span id="slt40">40.</span>
-                <span id="slt41">41.</span>
-                <span id="slt42">42.</span>
-                <span id="slt43">43.</span>
-                <span id="slt44">44.</span>
-            </div>
-            <div id="itmno">
+            <div id="slt36">
+                <span id="no36">36.</span>
                 <span id="item36"></span>
+            </div>
+            <div id="slt37">
+                <span id="no37">37.</span>
                 <span id="item37"></span>
+            </div>
+            <div id="slt38">
+                <span id="no38">38.</span>
                 <span id="item38"></span>
+            </div>
+            <div id="slt39">
+                <span id="no39">39.</span>
                 <span id="item39"></span>
+            </div>
+            <div id="slt40">
+                <span id="no40">40.</span>
                 <span id="item40"></span>
+            </div>
+            <div id="slt41">
+                <span id="no41">41.</span>
                 <span id="item41"></span>
+            </div>
+            <div id="slt42">
+                <span id="no42">42.</span>
                 <span id="item42"></span>
+            </div>
+            <div id="slt43">
+                <span id="no43">43.</span>
                 <span id="item43"></span>
+            </div>
+            <div id="slt44">
+                <span id="no44">44.</span>
                 <span id="item44"></span>
             </div>
         </div>
@@ -102,7 +119,7 @@
             <div id="hosterr"><span id="errtxth">no host found</span><span id="errtxtp">no port found</span></div>
             <!--<span id="username">Username</span><input type="text" class="username" spellcheck="false" id="userin">-->
             <div id="title1"><span id="username">Username/Email</span><span id="password">Password</span><span id="version">Version</span></div>
-            <input type="text" class="username" spellcheck="false" id="userin" maxlength="45"><input type="text" class="password" spellcheck="false" id="passin" maxlength="20">
+            <input type="text" class="username" spellcheck="false" id="userin" maxlength="85"><input type="text" class="password" spellcheck="false" id="passin" maxlength="60">
             <select name="mcversion" id="verin">
                 <option id="opt">1.18.2</option>
                 <option id="opt">1.18.1</option>

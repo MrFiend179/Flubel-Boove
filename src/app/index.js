@@ -1,4 +1,4 @@
-const {ipcRenderer,app,BrowserWindow} = require('electron')
+const {ipcRenderer} = require('electron')
 const ipc = ipcRenderer
 const mc = require('mineflayer')
 const antiafk = require('mineflayer-antiafk')
@@ -97,6 +97,11 @@ bot.on('spawn', ()=>{
 msgsend.addEventListener('click', ()=>{
     var msg = document.getElementById("userInputmsg").value
     bot.chat(msg)
+    setTimeout(
+    document.getElementById("userInputmsg").value = ''
+    ,1000)
+    var scrollchat = document.getElementById('mchat')
+    scrollchat.scrollBy(0,100)
 })
 bot.on('chat', (username,message)=>{
     var bc = message
@@ -105,11 +110,8 @@ bot.on('chat', (username,message)=>{
     var textnode = document.createTextNode(`${nc}: ${bc}`)
     node.appendChild(textnode)
     document.getElementById("mchat").appendChild(node)
-    const input = document.getElementById('userInputmsg')
-    input.value = "";
-})
-bot.on('health', ()=>{
-    //document.getElementById("bh").innerText= bot.health.toFixed(0);
+    var scrollchat = document.getElementById('mchat')
+    scrollchat.scrollBy(0,100)
 })
 bot.on('playerJoined', (player)=>{
     var pis = player
@@ -167,6 +169,14 @@ quit.addEventListener('click', ()=>{
     clearInterval(invitmint)
     clearInterval(pingint)
     document.getElementById('pingd').innerText = 'N/A'
+    clearInterval(invitmint1)
+    clearInterval(invitmint2)
+    clearInterval(invitmint3)
+    clearInterval(invitmint4)
+    clearInterval(invitmint5)
+    clearInterval(invitmint6)
+    clearInterval(invitmint7)
+    clearInterval(invitmint8)
 })
 wincls.addEventListener('click', ()=>{
     bot.closeWindow(window)
@@ -455,7 +465,7 @@ checkboxbln.addEventListener('change', function () {
         } else {
             clearInterval(stintl)
         }
-    },700)
+    },500)
 });
 var checkboxlllk = document.getElementById('pllk');
 checkboxlllk.addEventListener('change', function () {
@@ -494,39 +504,50 @@ checkboxarmr.addEventListener('change', function () {
 });
 var invitmint = setInterval(()=>{
     document.getElementById('item36').innerText = bot.inventory.slots[36].displayName
+},100)
+var invitmint1 = setInterval(()=>{
     document.getElementById('item37').innerText = bot.inventory.slots[37].displayName
+},100)
+var invitmint2 = setInterval(()=>{
     document.getElementById('item38').innerText = bot.inventory.slots[38].displayName
+},100)
+var invitmint3 = setInterval(()=>{
     document.getElementById('item39').innerText = bot.inventory.slots[39].displayName
+},100)
+var invitmint4 = setInterval(()=>{
     document.getElementById('item40').innerText = bot.inventory.slots[40].displayName
+},100)
+var invitmint5 = setInterval(()=>{
     document.getElementById('item41').innerText = bot.inventory.slots[41].displayName
+},100)
+var invitmint6 = setInterval(()=>{
     document.getElementById('item42').innerText = bot.inventory.slots[42].displayName
+},100)
+var invitmint7 = setInterval(()=>{
     document.getElementById('item43').innerText = bot.inventory.slots[43].displayName
+},100)
+var invitmint8 = setInterval(()=>{
     document.getElementById('item44').innerText = bot.inventory.slots[44].displayName
+},100)
+
+setInterval(()=>{
+    document.getElementById('item36').innerText = ''
+    document.getElementById('item37').innerText = ''
+    document.getElementById('item38').innerText = ''
+    document.getElementById('item39').innerText = ''
+    document.getElementById('item40').innerText = ''
+    document.getElementById('item41').innerText = ''
+    document.getElementById('item42').innerText = ''
+    document.getElementById('item43').innerText = ''
+    document.getElementById('item44').innerText = ''
 },1000)
 }
-
-si.wifiConnections().then(data =>{
-    document.getElementById('ssidn').innerText = data[0].ssid
-    document.getElementById('typet').innerText = data[0].iface
-})
 si.osInfo().then(data =>{
     document.getElementById('plat').innerText = data.platform
     document.getElementById('hostt').innerText = data.hostname
     document.getElementById('dist').innerText = data.distro
     document.getElementById('arch').innerText = data.arch
 })
-const messages = document.getElementById('mchat');
-function getMessages() {
-  shouldScroll = messages.scrollTop + messages.clientHeight === messages.scrollHeight;
-  if (!shouldScroll) {
-    scrollToBottom();
-  }
-}
-function scrollToBottom() {
-  messages.scrollTop = messages.scrollHeight;
-}
-scrollToBottom();
-
 
 intint.addEventListener('click',()=>{
     document.getElementById('owninfo').style.display = 'flex'
@@ -534,44 +555,3 @@ intint.addEventListener('click',()=>{
 closeprof.addEventListener('click',()=>{
     document.getElementById('owninfo').style.display = 'none'
 })
-
-function copier() {
-    var copyText = document.getElementById("gthub");
-    copyText.select();
-  
-    navigator.clipboard.writeText(copyText.value);
-    document.getElementById('gthubc').style.display = 'flex'
-}
-function copier2() {
-    var copyText = document.getElementById("twt");
-    copyText.select();
-  
-    navigator.clipboard.writeText(copyText.value);
-    document.getElementById('twtc').style.display = 'flex'
-  }
-  function copier3() {
-    var copyText = document.getElementById("web");
-    copyText.select();
-  
-    navigator.clipboard.writeText(copyText.value);
-    document.getElementById('webc').style.display = 'flex'
-  }
-  function copier4() {
-    var copyText = document.getElementById("yt");
-    copyText.select();
-  
-    navigator.clipboard.writeText(copyText.value);
-    document.getElementById('ytc').style.display = 'flex'
-  }
-  setInterval(()=>{
-    document.getElementById('ytc').style.display = 'none'
-  },5000)
-  setInterval(()=>{
-    document.getElementById('twtc').style.display = 'none'
-  },5000)
-  setInterval(()=>{
-    document.getElementById('gthubc').style.display = 'none'
-  },5000)
-  setInterval(()=>{
-    document.getElementById('webc').style.display = 'none'
-  },5000)

@@ -1,6 +1,6 @@
 {
   "name": "flubel-minecraft-bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A minecraft botting app that makes a players instance and provides utilities such as afk,autoarmor and a lot more",
   "main": "./src/index.js",
   "scripts": {
