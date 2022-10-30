@@ -4,7 +4,7 @@
 
 ![Social](https://img.shields.io/twitter/follow/Flubel_?color=%231DA1F2&label=Twitter&style=for-the-badge)
 ![Social](https://img.shields.io/youtube/channel/subscribers/UCha9zIeWFX58QASlKFW3CwQ?style=for-the-badge)
-![Social](https://img.shields.io/github/downloads/MrFiend179/Flubel-MinecraftBot/v1.0/total?color=blue&style=for-the-badge)
+![Social](https://img.shields.io/github/downloads/MrFiend179/Flubel-MinecraftBot/total?color=informational&style=for-the-badge)
 ![Social](https://img.shields.io/github/release-date/MrFiend179/Flubel-MinecraftBot?style=for-the-badge)
 ![Social](https://img.shields.io/github/last-commit/MrFiend179/Flubel-MinecraftBot?color=important&style=for-the-badge)
 ![Social](https://img.shields.io/github/languages/code-size/MrFiend179/Flubel-MinecraftBot?style=for-the-badge)
