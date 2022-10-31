@@ -17,6 +17,9 @@ srccd(){
 srccd1(){
     wget https://github.com/MrFiend179/Flubel-MinecraftBot/archive/refs/tags/v1.0.1.tar.gz
 }
+linux(){
+    wget https://github.com/MrFiend179/Flubel-MinecraftBot/releases/download/v1.0.1/Flubel.MinecraftBot-1.0.1.AppImage
+}
 echo "Starting to download Flubel MinecraftBot app :D"
 read   -n 1 -p $'Press any key to Continue\n'
 echo " Starting....."
@@ -25,8 +28,9 @@ echo '[1] 64-bit v1.0.0'
 echo '[2] 32-bit v1.0.0'
 echo '[3] Source Code v1.0.0'
 echo '[4] 64-bit v1.0.1'
-echo '[5] 32-bit v1.0.1'
-echo '[6] Source Code v1.0.1'
+echo '[5] 64-bit v1.0.1 [Linux]'
+echo '[6] 32-bit v1.0.1'
+echo '[7] Source Code v1.0.1'
 read pass
 if [ $pass = '1' ]
 then
@@ -79,6 +83,18 @@ fi
 if [ $pass = '5' ]
 then
     echo "################################################"
+    echo "# Downloading Flubel MinecraftBot 1.1.1.x64.exe#"
+    echo "# For Linux                                    #"
+    echo "#          Made by Fiend. (Flubel)             #"
+    echo "################################################"
+    linux
+    echo "################################################"
+    echo '#          Download was Succesful :D           #'
+    echo "################################################"
+fi
+if [ $pass = '6' ]
+then
+    echo "################################################"
     echo "# Downloading Flubel MinecraftBot 1.1.1.x32.exe#"
     echo "#                                              #"
     echo "#          Made by Fiend. (Flubel)             #"
@@ -88,7 +104,7 @@ then
     echo '#          Download was Succesful :D           #'
     echo "################################################"
 fi
-if [ $pass = '6' ]
+if [ $pass = '7' ]
 then
     echo "################################################"
     echo "# Downloading Source CodeFlubel MinecraftBot   #"
