@@ -49,25 +49,25 @@
 
 **Minecraft window**
 
-![App Screenshot](https://pbs.twimg.com/media/FjtJ33oXEAMje2H?format=jpg&name=360x360)
+![App Screenshot](https://pbs.twimg.com/media/FjtJ33oXEAMje2H?format=jpg&name=small)
 
 **Discord window**
 
-![App Screenshot](https://pbs.twimg.com/media/FjtJ33pXgAU4qCe?format=jpg&name=360x360)
+![App Screenshot](https://pbs.twimg.com/media/FjtJ33pXgAU4qCe?format=jpg&name=small)
 
 **Settings window**
 
-![App Screenshot](https://pbs.twimg.com/media/FjtJ33pXEAAvBpW?format=jpg&name=360x360)
+![App Screenshot](https://pbs.twimg.com/media/FjtJ33pXEAAvBpW?format=jpg&name=small)
 
 **Main app (Light Mode)**
 
 **Minecraft window**
 
-![App Screenshot](https://pbs.twimg.com/media/FjtLgcOWIAAz0wy?format=jpg&name=360x360)
+![App Screenshot](https://pbs.twimg.com/media/FjtLgcOWIAAz0wy?format=jpg&name=small)
 
 **Discord window**
 
-![App Screenshot](https://pbs.twimg.com/media/FjtLgcNXgAMKB_8?format=jpg&name=360x360)
+![App Screenshot](https://pbs.twimg.com/media/FjtLgcNXgAMKB_8?format=jpg&name=small)
 
 **Settings Window**
 
