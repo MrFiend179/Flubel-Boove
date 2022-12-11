@@ -48,20 +48,31 @@
 **Main app (Dark Mode)**
 
 **Minecraft window**
+
 ![App Screenshot](https://pbs.twimg.com/media/FjtJ33oXEAMje2H?format=jpg&name=360x360)
+
 **Discord window**
+
 ![App Screenshot](https://pbs.twimg.com/media/FjtJ33pXgAU4qCe?format=jpg&name=360x360)
+
 **Settings window**
+
 ![App Screenshot](https://pbs.twimg.com/media/FjtJ33pXEAAvBpW?format=jpg&name=360x360)
 
 **Main app (Light Mode)**
 
 **Minecraft window**
+
 ![App Screenshot](https://pbs.twimg.com/media/FjtLgcOWIAAz0wy?format=jpg&name=360x360)
+
 **Discord window**
+
 ![App Screenshot](https://pbs.twimg.com/media/FjtLgcNXgAMKB_8?format=jpg&name=360x360)
+
 **Settings Window**
+
 ![App Screenshot](https://pbs.twimg.com/media/FjtLgcOXwAA2rBQ?format=jpg&name=small)
+
 
 # Run Shell Script
 In order to run the shell script follow the following steps:
