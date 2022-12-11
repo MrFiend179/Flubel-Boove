@@ -9,6 +9,8 @@ const autoeat = require('mineflayer-auto-eat')
 const si = require('systeminformation')
 //#2f3238 bg clr
 console.log('ola')
+document.getElementById('enabstn1').style.backgroundColor = 'white'
+document.getElementById('iconmc').style.fill = 'white'
 closeBtn.addEventListener('click', ()=>{
     ipc.send('closeApp')
 })
@@ -40,7 +42,6 @@ if(namein != ''){
     document.getElementById('userin').style.border = '1px solid #202020'
     document.getElementById('icon').style.stroke = '#55FFFF'
     document.getElementById('status').innerText = 'Starting'
-    document.getElementById('status').style.color = 'white'
 }
 if(hostin === ''){
     document.getElementById("errtxth").style.display = 'flex'
@@ -78,7 +79,6 @@ bot.on('login', ()=>{
     document.getElementById('valw').style.backgroundColor = '#e05a00'
     document.getElementById('icon').style.stroke = '#55FF55'
     document.getElementById('status').innerText = 'Connected'
-    document.getElementById('status').style.color = 'white'
     document.getElementById('btn1').style.borderBottom = '1px solid red'
     document.getElementById('btn1').style.height = '29px'
     document.getElementById('bos').style.backgroundColor = '#50C878'
@@ -97,14 +97,20 @@ bot.on('spawn', ()=>{
 msgsend.addEventListener('click', ()=>{
     var msg = document.getElementById("userInputmsg").value
     bot.chat(msg)
+    /*
     var scrollchat = document.getElementById('mchat')
     scrollchat.scrollBy(0,100)
     var clrint = setInterval(()=>{
         document.getElementById("userInputmsg").value = ''
         clearInterval(clrint)
     },1000)
+    */
+    setTimeout(() => {
+        document.getElementById("userInputmsg").value = ''
+    }, 300);
 })
-bot.on('chat', (username,message)=>{
+bot.on('message', (m)=>{
+    /*
     var bc = message
     var nc = username
     var node = document.createElement('span')
@@ -113,6 +119,20 @@ bot.on('chat', (username,message)=>{
     document.getElementById("mchat").appendChild(node)
     var scrollchat = document.getElementById('mchat')
     scrollchat.scrollBy(0,100)
+    */
+    const t = document.createElement("span");
+    var c = ''
+    if (m.json.extra instanceof Array) {
+      m.json.extra.forEach(e => {
+        c += `<span style="color: ${e.color}; ${e.bold ? 'font-weight: bold;' : ''} ${e.italic ? 'font-style: italic;' : ''} ${e.strikethrough && e.underlined ? 'text-decoration: line-through underline' : e.strikethrough ? 'text-decoration: line-through' : e.underlined ? 'text-decoration: underline' : ''}">${e.text.replace('<', '&lt').replace('>', '&gt')}</span>`.replace(/\\n/g, '<br>')
+      });
+    } else if (m.json.text) {
+      c += `<span>${m.json.text.replace('<', '&lt;').replace('>', '&gt;')}</span>`.replace(/\\n/g, '<br>').replace(/&.{1}/g, '')
+      //§
+    }
+    t.innerHTML = c
+    document.getElementById('mchat').appendChild(t)
+    document.getElementById('mchat').scrollTop = document.getElementById('mchat').scrollHeight
 })
 bot.on('playerJoined', (player)=>{
     var pis = player
@@ -124,7 +144,6 @@ bot.on('playerJoined', (player)=>{
 bot.on('kicked', ()=>{
     document.getElementById("icon").style.stroke = '#AA0000'
     document.getElementById('status').innerText = 'Kicked'
-    document.getElementById('status').style.color = 'white'
 })
 quit.addEventListener('click', ()=>{
     bot.quit()
@@ -133,7 +152,6 @@ quit.addEventListener('click', ()=>{
     document.getElementById('plist').innerHTML = "";
     document.getElementById('icon').style.stroke = '#FF5555'
     document.getElementById('status').innerText = 'Disconnected'
-    document.getElementById('status').style.color = 'white'
     document.getElementById('btn1').style.borderBottom = '0px'
     document.getElementById('btn1').style.height = '30px'
     document.getElementById('btn2').style.borderBottom = '0px'
@@ -530,7 +548,6 @@ var invitmint7 = setInterval(()=>{
 var invitmint8 = setInterval(()=>{
     document.getElementById('item44').innerText = bot.inventory.slots[44].displayName
 },100)
-
 setInterval(()=>{
     document.getElementById('item36').innerText = ''
     document.getElementById('item37').innerText = ''
@@ -543,16 +560,6 @@ setInterval(()=>{
     document.getElementById('item44').innerText = ''
 },1000)
 }
-si.osInfo().then(data =>{
-    document.getElementById('plat').innerText = data.platform
-    document.getElementById('hostt').innerText = data.hostname
-    document.getElementById('dist').innerText = data.distro
-    document.getElementById('arch').innerText = data.arch
-})
 
-intint.addEventListener('click',()=>{
-    document.getElementById('owninfo').style.display = 'flex'
-})
-closeprof.addEventListener('click',()=>{
-    document.getElementById('owninfo').style.display = 'none'
+discbtn.addEventListener('click',()=>{
 })

@@ -10,10 +10,11 @@
 ![Social](https://img.shields.io/github/languages/code-size/MrFiend179/Flubel-MinecraftBot?style=for-the-badge)
 ![Social](https://img.shields.io/github/issues/MrFiend179/Flubel-MinecraftBot?style=for-the-badge)
 ## Description
-  An Advance and lightweight app that makes a players instance and provides utilities such as auto-armor , afk , chat , playerlist and a new and unique Feature (Go to Player)
+  An advanced bot panel that creates both minecraft and discord bot and runs them at the same time along with hosting them.
 
 ## Features
 
+**Minecraft Bot**
 - Afk
 - Auto-Armor
 - Skin Blinker
@@ -21,22 +22,47 @@
 - Playerlist
 - Chat
 - Go to Player (A new feature only made by us)
+- Color chat
 
+**Discord Bot**
+- custom activity
+- meme command
+- troll kill command
+- user avatar command
+- user comparison command
+- user id command
+- truth about user command
+- ability to send messaged to specific channel
+- shows logs with channel name and server name
 
 ## Support
 
 | Versions  | Windows| Linux Os | Mac Os   |
 |-----------|--------|-------|----- |
 | v1.0.0      |     ✅   |    ❌   |  ❌    |
-| v1.0.1      |     ✅   |    ❌   |  ❌    |
+| v1.0.1      |     ✅   |   ✅    |  ❌    |
+| v1.1.1      |     ✅   |    ❌   |  ❌    |
 
 
 # ScreenShots
-## Image 1:
-![App Screenshot](https://pbs.twimg.com/media/FgVMwcvXEAcIpxo?format=png&name=900x900)
 
-## Image 2:
-![App Screenshot](https://pbs.twimg.com/media/FgQEgCtWQAQlUQw?format=png&name=900x900)
+**Main app (Dark Mode)**
+
+**Minecraft window**
+![App Screenshot](https://pbs.twimg.com/media/FjtJ33oXEAMje2H?format=jpg&name=360x360)
+**Discord window**
+![App Screenshot](https://pbs.twimg.com/media/FjtJ33pXgAU4qCe?format=jpg&name=360x360)
+**Settings window**
+![App Screenshot](https://pbs.twimg.com/media/FjtJ33pXEAAvBpW?format=jpg&name=360x360)
+
+**Main app (Light Mode)**
+
+**Minecraft window**
+![App Screenshot](https://pbs.twimg.com/media/FjtLgcOWIAAz0wy?format=jpg&name=360x360)
+**Discord window**
+![App Screenshot](https://pbs.twimg.com/media/FjtLgcNXgAMKB_8?format=jpg&name=360x360)
+**Settings Window**
+![App Screenshot](https://pbs.twimg.com/media/FjtLgcOXwAA2rBQ?format=jpg&name=small)
 
 # Run Shell Script
 In order to run the shell script follow the following steps:

@@ -6,43 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./index.js"></script>
     <script defer src="./socials.js"></script>
+    <script defer src="./settings.js"></script>
+    <script defer src="./discord.js"></script>
     <link rel="stylesheet" href="index.css">
     <title>Flubel</title>
 </head>
 <body>
-    <section class="mainapp" class="move-area">
+    <section class="mainapp" id="mainapps" class="move-area">
         <div id="nav">
-            <img id="smllogo" src="./icons/smallogo.png" height="20px" width="20px">
-            <span id="apver">(v1.0.1)</span>
-            <span id="titlemain">Flubel MinecraftBot</span>
+            <img id="smllogo" src="./icons/smlgstskb.png" height="20px" width="20px">
+            <span id="apver">(v1.1.0)</span>
+            <span id="titlemain"></span>
             <span id="minimizeApp">
-                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#7F8487" stroke="#7f8487" stroke-linecap="round" stroke-width="2" d="M20 12H4"/></svg>
+                <svg id="mbtnicn" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="#7F8487" stroke="#7f8487"><path stroke-linecap="round" stroke-width="2" d="M20 12H4"/></svg>
             </span>
             <span id="closeBtn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path fill="#7F8487" d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"/></svg>
+                <svg id="cbtnicn" xmlns="http://www.w3.org/2000/svg" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" fill="#7F8487"><path d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"/></svg>
             </span>
         </div>
-       <!--<button onclick="tst()">click to enable bot</button>
-        <button id="botquit">Quit</button>
-        <form id="form" onsubmit="return false;">
-            <input style=" top:10%; left:5%; width:40%;" type="text" id="userInput" />
-            <input style=" top:20%; left:5%; width:40%; background-color: gray;" type="text" id="userInputport" />
-            <input style=" top:10%; left:5%; width:40%;" type="submit" onclick="tst();" />
-        </form>
-        <form id="form1" onsubmit="return false;">
-            <input style=" top:20%; left:5%; width:40%;" type="text" id="userInputmsg" />
-            <input style=" top:400px; left:5%; width:40%;" type="submit" id="msgsend"/>
-        </form>
-        <select name="membership" id="membership">
-            <option >flutstb</option>
-            <option >sassyaf</option>
-            <option></option>
-            <option >araara</option>
-          </select>
-       <span id="bh">Data</span>-->
-          <div id="bos"></div>
+       <div id="changer">
+            <div id="enabstn"></div>
+            <div id="enabstn1"></div>
+            <div id="enabstn2"></div>
+            <div id="mcsingle">
+                <svg id="iconmc" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512" fill="#999999"><path  d="M0 0h169.847v172.501H0zm340.775 0h170.094v172.501H340.775zm0 172.502H169.847v85.915H84.785V512h85.062v-86.668h170.928V512h85.866V258.417h-85.866z"/></svg>
+            </div>
+            <div id="disc">
+                <svg id="discbtn" xmlns="http://www.w3.org/2000/svg" width="1.7rem" height="1.7rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="#999999"><path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0a12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055a20.03 20.03 0 0 0 5.993 2.98a.078.078 0 0 0 .084-.026a13.83 13.83 0 0 0 1.226-1.963a.074.074 0 0 0-.041-.104a13.201 13.201 0 0 1-1.872-.878a.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028a19.963 19.963 0 0 0 6.002-2.981a.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028ZM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38c0-1.312.956-2.38 2.157-2.38c1.21 0 2.176 1.077 2.157 2.38c0 1.312-.956 2.38-2.157 2.38Zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38c0-1.312.955-2.38 2.157-2.38c1.21 0 2.176 1.077 2.157 2.38c0 1.312-.946 2.38-2.157 2.38Z"/></svg>
+            </div>
+            <div id="settings">
+                <svg id="stngs" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="#999999"><path  d="M13.82 22h-3.64a1 1 0 0 1-.977-.786l-.407-1.884a8.002 8.002 0 0 1-1.535-.887l-1.837.585a1 1 0 0 1-1.17-.453L2.43 15.424a1.006 1.006 0 0 1 .193-1.239l1.425-1.3a8.1 8.1 0 0 1 0-1.772L2.623 9.816a1.006 1.006 0 0 1-.193-1.24l1.82-3.153a1 1 0 0 1 1.17-.453l1.837.585c.244-.18.498-.348.76-.5c.253-.142.513-.271.779-.386l.408-1.882A1 1 0 0 1 10.18 2h3.64a1 1 0 0 1 .976.787l.412 1.883a7.993 7.993 0 0 1 1.534.887l1.838-.585a1 1 0 0 1 1.169.453l1.82 3.153c.232.407.152.922-.193 1.239l-1.425 1.3a8.1 8.1 0 0 1 0 1.772l1.425 1.3c.345.318.425.832.193 1.239l-1.82 3.153a1 1 0 0 1-1.17.453l-1.837-.585a7.98 7.98 0 0 1-1.534.886l-.412 1.879a1 1 0 0 1-.976.786Zm-6.2-5.771l.82.6c.185.136.377.261.577.375c.188.109.38.207.579.296l.933.409l.457 2.091h2.03l.457-2.092l.933-.409c.407-.18.794-.403 1.153-.666l.82-.6l2.042.65l1.015-1.758l-1.583-1.443l.112-1.012c.05-.443.05-.89 0-1.332l-.112-1.012l1.584-1.446l-1.016-1.759l-2.041.65l-.821-.6a6.227 6.227 0 0 0-1.153-.671l-.933-.409L13.016 4h-2.03l-.46 2.092l-.93.408a6.01 6.01 0 0 0-1.153.666l-.821.6l-2.04-.65L4.565 8.88l1.583 1.441l-.112 1.013c-.05.443-.05.89 0 1.332l.112 1.012l-1.583 1.443l1.015 1.758l2.04-.65ZM11.996 16a4 4 0 1 1 0-8a4 4 0 0 1 0 8Zm0-6a2 2 0 1 0 2 2.09v.4V12a2 2 0 0 0-2-2Z"/></svg>
+            </div>
+        </div>
+        <div id="bos"></div>
             <div id="network">
-                <div id="inticn"><svg xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20"><g fill="white"><path fill-rule="evenodd" d="M1.25 10a8.75 8.75 0 1 0 17.5 0a8.75 8.75 0 0 0-17.5 0Zm16 0a7.25 7.25 0 1 1-14.5 0a7.25 7.25 0 0 1 14.5 0Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M6.25 10c0 4.522 1.491 8.25 3.75 8.25s3.75-3.728 3.75-8.25S12.259 1.75 10 1.75S6.25 5.478 6.25 10Zm6 0c0 3.762-1.195 6.75-2.25 6.75S7.75 13.762 7.75 10S8.945 3.25 10 3.25s2.25 2.988 2.25 6.75Z" clip-rule="evenodd"/><path d="m3.602 5.467l1.006-1.112c.1.09.209.18.325.267c1.271.952 3.3 1.54 5.515 1.54c1.891 0 3.652-.427 4.931-1.158c.308-.176.582-.367.819-.57l.974 1.141a6.73 6.73 0 0 1-1.048.73c-1.516.868-3.534 1.356-5.676 1.356c-2.522 0-4.865-.678-6.415-1.839a6.063 6.063 0 0 1-.431-.355Zm0 9.082l1.006 1.112c.1-.091.209-.18.325-.267c1.271-.952 3.3-1.54 5.515-1.54c1.891 0 3.652.427 4.931 1.158c.308.176.582.367.819.57l.974-1.141a6.841 6.841 0 0 0-1.048-.73c-1.516-.868-3.534-1.356-5.676-1.356c-2.522 0-4.865.678-6.415 1.839a6.06 6.06 0 0 0-.431.355ZM1.75 10.75v-1.5h16.5v1.5H1.75Z"/></g></svg></div>
+                <div id="inticn"><svg id="intsvg" xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" fill="white"><path d="M1.25 10a8.75 8.75 0 1 0 17.5 0a8.75 8.75 0 0 0-17.5 0Zm16 0a7.25 7.25 0 1 1-14.5 0a7.25 7.25 0 0 1 14.5 0Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M6.25 10c0 4.522 1.491 8.25 3.75 8.25s3.75-3.728 3.75-8.25S12.259 1.75 10 1.75S6.25 5.478 6.25 10Zm6 0c0 3.762-1.195 6.75-2.25 6.75S7.75 13.762 7.75 10S8.945 3.25 10 3.25s2.25 2.988 2.25 6.75Z" clip-rule="evenodd"/><path d="m3.602 5.467l1.006-1.112c.1.09.209.18.325.267c1.271.952 3.3 1.54 5.515 1.54c1.891 0 3.652-.427 4.931-1.158c.308-.176.582-.367.819-.57l.974 1.141a6.73 6.73 0 0 1-1.048.73c-1.516.868-3.534 1.356-5.676 1.356c-2.522 0-4.865-.678-6.415-1.839a6.063 6.063 0 0 1-.431-.355Zm0 9.082l1.006 1.112c.1-.091.209-.18.325-.267c1.271-.952 3.3-1.54 5.515-1.54c1.891 0 3.652.427 4.931 1.158c.308.176.582.367.819.57l.974-1.141a6.841 6.841 0 0 0-1.048-.73c-1.516-.868-3.534-1.356-5.676-1.356c-2.522 0-4.865.678-6.415 1.839a6.06 6.06 0 0 0-.431.355ZM1.75 10.75v-1.5h16.5v1.5H1.75Z"/></g></svg></div>
                 <div id="pingms">
                     <span id="pingt">Ping</span><span id="pingd">N/A</span>
                 </div>
@@ -52,19 +50,17 @@
                 <div id="ntype">
                     <span id="typet">Null</span>
                 </div>
-                <div id="intint">
-                    <svg id="infoi" xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path stroke-linecap="round" d="M12 7h.01"/><path stroke-linecap="round" stroke-linejoin="round" d="M10 11h2v5m-2 0h4"/></g></svg>
-                </div>
             </div>
         <div id="chat">
             <span id="cn">Minecraft Chat</span>
             <div id="chatmsg">
             <div id="mchat">
+                <span></span>
             </div>
         </div>
         <form name="chatmc" id="chatform" onsubmit="return false;">
             <input type="text" id="userInputmsg" />
-            <input type="submit" id="msgsend"/>
+            <input type="submit" value="Send" id="msgsend"/>
         </form>
        </div>
        <div id="botinv">
@@ -162,10 +158,9 @@
                         <span id="wincls">Close</span><span id="wino">Window Options</span><div id="valw"></div>
                     </div>
                     <div id="btl">
-                        <input type="number" id="winslt" maxlength="2">
+                        <input type="number" id="winslt" maxlength="2" minlength="1">
                         <span id="lbtn">L click</span>
                         <span id="rbtn">R click</span>
-                        <!--<span id="winext"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="currentColor" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504L738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512L828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496L285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512L195.2 285.696a64 64 0 0 1 0-90.496z"/></svg></span>-->
                     </div>
                 </div>
                 <div id="afkb">
@@ -204,8 +199,7 @@
                         <div class="sliderarmr"></div>
                     </label>
                 </div>
-              <!--<span id="ati">btn</span><span id="lclick">Lclick</span>-->
-              <span id="htbb">Hotbar</span><!--<span id="btinv"></span>--><span id="act">Activate Item</span>
+              <span id="htbb">Hotbar</span><span id="act">Activate Item</span>
                 <div id="bmsb">
                     <span></span>
                     <span id="btn1">1</span>
@@ -221,63 +215,257 @@
                 </div>
             </div>
         </div>
-        <div id="owninfo">
-            <span id="closel"></span>
-            <div id="maininfo">
-                <!--<img src="./icons/logo4.png" height="70px" width="50px">-->
-                <div id="cmppfp">
-                    <div id="mnimg">
-                        <img src="./icons/logo4.png" height="70px" width="40px">
+        <div id="setwin">
+            <div id="introapp">
+                <div id="mainint">
+                        <div id="mnimg">
+                            <img src="./icons/logo4.png" height="70px" width="40px">
+                        </div>
+                        <span id="titlepro">Boove by Flubel</span>
+                        <span id="cprymrk">© Flubel by Fiend</span>
+                        <span id="mainidn1">Flubel</span>
+                        <span id="mainidn">Flubel</span>
+                        <div id="descset">We here at Flubel aim to make the best lightweight softwares to provide you benifit at ease</div>
+                        <div id="socialsset">
+                            <svg id="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                            <svg id="checkmark1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle1" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check1" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                            <svg id="checkmark2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle2" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check2" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                            <svg id="checkmark3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle3" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check3" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                            <svg id="checkmark4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle4" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check4" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
+                            <span id="ctc">Click to copy to clipboard</span>
+                            <div id="topsocial">
+                                <span></span>
+                                <svg id="github" onclick="copier()" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><g clip-path="url(#svgIDa)"><path fill="white" fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" clip-rule="evenodd"/></g><defs><clipPath id="svgIDa"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g></svg>
+                                <span></span>
+                                <svg id="twitter" onclick="copier2()" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578a9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25a13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568a4.692 4.692 0 0 1-2.104.08a4.661 4.661 0 0 0 4.352 3.234a9.348 9.348 0 0 1-5.786 1.995a9.5 9.5 0 0 1-1.112-.065a13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254c0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003Z"/></svg>
+                                <span></span>
+                                <svg id="website" onclick="copier3()" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10"/><path stroke-linecap="round" stroke-linejoin="round" d="M13 2.05S16 6 16 12m-5 9.95S8 18 8 12c0-6 3-9.95 3-9.95M2.63 15.5H12m-9.37-7h18.74"/><path d="M21.879 17.917c.494.304.463 1.043-.045 1.101l-2.567.291l-1.151 2.312c-.228.459-.933.234-1.05-.334l-1.255-6.116c-.099-.48.333-.782.75-.525l5.318 3.271Z" clip-rule="evenodd"/></g></svg>
+                                <span></span>
+                            </div>
+                            <div id="bottomsocial">
+                                <span></span>
+                                <svg id="youtube" onclick="copier4()" xmlns="http://www.w3.org/2000/svg" width="2.5rem" height="2.5rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="white" d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133l-232 135z"/></svg>
+                                <span></span>
+                                <svg id="discord" onclick="copier5()" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0a12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055a20.03 20.03 0 0 0 5.993 2.98a.078.078 0 0 0 .084-.026a13.83 13.83 0 0 0 1.226-1.963a.074.074 0 0 0-.041-.104a13.201 13.201 0 0 1-1.872-.878a.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028a19.963 19.963 0 0 0 6.002-2.981a.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028ZM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38c0-1.312.956-2.38 2.157-2.38c1.21 0 2.176 1.077 2.157 2.38c0 1.312-.956 2.38-2.157 2.38Zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38c0-1.312.955-2.38 2.157-2.38c1.21 0 2.176 1.077 2.157 2.38c0 1.312-.946 2.38-2.157 2.38Z"/></svg>
+                                <span></span>
+                            </div>
+                        </div>
+                            <input id="gthub" type="hidden" value="https://github.com/MrFiend179">
+                            <input id="twt" type="hidden" value="https://twitter.com/Flubel_">
+                            <input id="web" type="hidden" value="https://flubel.cf/">
+                            <input id="yt" type="hidden" value="https://www.youtube.com/channel/UCha9zIeWFX58QASlKFW3CwQ">
+                            <input id="discser" type="hidden" value="https://discord.com/invite/ceAv3Njqmk">
+                </div>
+            </div>
+            <div id="userstat">
+                <div id="titstat">System</div>
+                <div id="userstatinfo">
+                    <div id="stinf1">
+                        <div id="st1">Platform</div>
+                        <div id="st1n">Computing...</div>
+                    </div>
+                    <div id="stinf2">
+                        <div id="st2">Host</div>
+                        <div id="st2n">Computing...</div>
+                    </div>
+                    <div id="stinf3">
+                        <div id="st3">Architecture</div>
+                        <div id="st3n">Computing...</div>
+                    </div>
+                    <div id="stinf8">
+                        <div id="st8">Release</div>
+                        <div id="st8n">Computing...</div>
+                    </div>
+                    <div id="stinf4">
+                        <div id="st4">Distributor</div>
+                        <div id="st4n">Computing...</div>
+                    </div>
+                    <div id="stinf5">
+                        <div id="st5">Processor</div>
+                        <div id="st5n">Computing...</div>
+                    </div>
+                    <div id="stinf6">
+                        <div id="st6">RAM</div>
+                        <div id="st6n">Computing...</div>
+                    </div>
+                    <div id="stinf7">
+                        <div id="st7">ip4 adress</div>
+                        <div id="st7n">N/A</div>
                     </div>
                 </div>
-                <div id="prof">
-                    <div id="closeprof"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#545" d="m13.41 12l4.3-4.29a1 1 0 1 0-1.42-1.42L12 10.59l-4.29-4.3a1 1 0 0 0-1.42 1.42l4.3 4.29l-4.3 4.29a1 1 0 0 0 0 1.42a1 1 0 0 0 1.42 0l4.29-4.3l4.29 4.3a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.42Z"/></svg></div>
-                    <span id="titlepro">Flubel by Fiend</span>
-                    <div id="info">
-                        A Minecraft app which makes a player instance and provides utilities such as afk , auto armor and many more.
+            </div>
+            <div id="realset">
+                <div id="realsett">Settings</div>
+                <div id="relsetinfo">
+                    <div id="realdrlms">
+                        <div id="drlm">Background</div>
+                        <div id="drmls">
+                            <div id="drmdl">Dark Mode</div>
+                            <label class="switchdrml">
+                                <input type="checkbox" id="afkswtdrml">
+                                <div class="sliderdrml"></div>
+                            </label>
+                            <div id="lmdl">Light Mode</div>
+                        </div>
                     </div>
-                    <div id="check">
-                        <svg id="gthubc" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#55FF55"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417L5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></g></svg>
-                        <svg id="twtc" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#55FF55"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417L5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></g></svg>
-                        <svg id="webc" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#55FF55"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417L5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></g></svg>
-                        <svg id="ytc" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#55FF55"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417L5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/></g></svg>
-                    </div>
-                    <div id="socials">
-                        <span></span>
-                        <svg id="github" onclick="copier()" xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none"><g clip-path="url(#svgIDa)"><path fill="white" fill-rule="evenodd" d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385c.6.105.825-.255.825-.57c0-.285-.015-1.23-.015-2.235c-3.015.555-3.795-.735-4.035-1.41c-.135-.345-.72-1.41-1.23-1.695c-.42-.225-1.02-.78-.015-.795c.945-.015 1.62.87 1.845 1.23c1.08 1.815 2.805 1.305 3.495.99c.105-.78.42-1.305.765-1.605c-2.67-.3-5.46-1.335-5.46-5.925c0-1.305.465-2.385 1.23-3.225c-.12-.3-.54-1.53.12-3.18c0 0 1.005-.315 3.3 1.23c.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23c.66 1.65.24 2.88.12 3.18c.765.84 1.23 1.905 1.23 3.225c0 4.605-2.805 5.625-5.475 5.925c.435.375.81 1.095.81 2.22c0 1.605-.015 2.895-.015 3.3c0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" clip-rule="evenodd"/></g><defs><clipPath id="svgIDa"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></g></svg>
-                        <span></span>
-                        <svg id="twitter" onclick="copier2()" xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M23.643 4.937c-.835.37-1.732.62-2.675.733a4.67 4.67 0 0 0 2.048-2.578a9.3 9.3 0 0 1-2.958 1.13a4.66 4.66 0 0 0-7.938 4.25a13.229 13.229 0 0 1-9.602-4.868c-.4.69-.63 1.49-.63 2.342A4.66 4.66 0 0 0 3.96 9.824a4.647 4.647 0 0 1-2.11-.583v.06a4.66 4.66 0 0 0 3.737 4.568a4.692 4.692 0 0 1-2.104.08a4.661 4.661 0 0 0 4.352 3.234a9.348 9.348 0 0 1-5.786 1.995a9.5 9.5 0 0 1-1.112-.065a13.175 13.175 0 0 0 7.14 2.093c8.57 0 13.255-7.098 13.255-13.254c0-.2-.005-.402-.014-.602a9.47 9.47 0 0 0 2.323-2.41l.002-.003Z"/></svg>
-                        <span></span>
-                        <svg id="website" onclick="copier3()" xmlns="http://www.w3.org/2000/svg" width="3rem" height="3rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><g fill="none" stroke="white" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12s4.477 10 10 10"/><path stroke-linecap="round" stroke-linejoin="round" d="M13 2.05S16 6 16 12m-5 9.95S8 18 8 12c0-6 3-9.95 3-9.95M2.63 15.5H12m-9.37-7h18.74"/><path d="M21.879 17.917c.494.304.463 1.043-.045 1.101l-2.567.291l-1.151 2.312c-.228.459-.933.234-1.05-.334l-1.255-6.116c-.099-.48.333-.782.75-.525l5.318 3.271Z" clip-rule="evenodd"/></g></svg>
-                        <span></span>
-                        <svg id="youtube" onclick="copier4()" xmlns="http://www.w3.org/2000/svg" width="3.5rem" height="3.5rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path fill="white" d="M941.3 296.1a112.3 112.3 0 0 0-79.2-79.3C792.2 198 512 198 512 198s-280.2 0-350.1 18.7A112.12 112.12 0 0 0 82.7 296C64 366 64 512 64 512s0 146 18.7 215.9c10.3 38.6 40.7 69 79.2 79.3C231.8 826 512 826 512 826s280.2 0 350.1-18.8c38.6-10.3 68.9-40.7 79.2-79.3C960 658 960 512 960 512s0-146-18.7-215.9zM423 646V378l232 133l-232 135z"/></svg>
-                        <span></span>
-                    </div> 
-                    <div id="scn">
-                        <span id="gtn">Github</span>
-                        <span id="twtn">Twitter</span>
-                        <span id="webn">Website</span>
-                        <span id="ytn">Youtube</span>
-                    </div>   
                 </div>
-                <span id="mainidn1">Flubel</span>
-                <span id="mainidn">Flubel</span>
-
             </div>
-            <input id="gthub" type="hidden" value="https://github.com/MrFiend179">
-            <input id="twt" type="hidden" value="https://twitter.com/Flubel_">
-            <input id="web" type="hidden" value="https://mrfiend179.github.io/flubel-webpage/">
-            <input id="yt" type="hidden" value="https://www.youtube.com/channel/UCha9zIeWFX58QASlKFW3CwQ">
-            <div id="sysinf">
-                <span id="platt">Platform</span>
-                <span id="hostn">Host</span>
-                <span id="distt">Distro</span>
-                <span id="archt">Architecture</span>
-                <span id="plat">Computing...</span>
-                <span id="hostt">Computing...</span>
-                <span id="dist">Computing...</span>
-                <span id="arch">Computing...</span>
+        </div>
+        <div id="discordwin">
+            
+                <div id="discnoti">
+                    <div id="noticod">
+                        <svg id="disnoti" xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="#999999"><path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0a12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055a20.03 20.03 0 0 0 5.993 2.98a.078.078 0 0 0 .084-.026a13.83 13.83 0 0 0 1.226-1.963a.074.074 0 0 0-.041-.104a13.201 13.201 0 0 1-1.872-.878a.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028a19.963 19.963 0 0 0 6.002-2.981a.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028ZM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38c0-1.312.956-2.38 2.157-2.38c1.21 0 2.176 1.077 2.157 2.38c0 1.312-.956 2.38-2.157 2.38Zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38c0-1.312.955-2.38 2.157-2.38c1.21 0 2.176 1.077 2.157 2.38c0 1.312-.946 2.38-2.157 2.38Z"/></svg>
+                    </div>
+                    <div id="dnotittl">
+                        <div id="notttl"></div>
+                        <div id="notddsc"></div>
+                    </div>
+                </div>
+            
+            <div id="discstt">
+                <div id="dbstat"></div>
+                <div id="dbtpfp"></div>
+                <div id="bothinfbg">
+                    <div id="bothinf">
+                        <span id="infdtxt">Finfo</span>
+                    </div>
+                </div>
+                <div id="dbnm">
+                    <span id="busn">Discord</span>&nbsp;<span id="bdm">#2005</span>
+                </div>
+                <div id="dbact">
+                    <span id="acttl">Activity</span>
+                    <input type="text" id="dactv">
+                </div>
+                <div id="dbtkn">
+                    <div id="errtkn">no token found</div>
+                    <div id="invtkn">Invaid token</div>
+                    <div id="tknttl">Token</div><div id="hd">Hide</div><div id="sh">Show</div>
+                    <input type="text" id="dbtknv">
+                </div>
+                <div id="dwinerinf">
+                    <span id="erinf">Info</span>
+                </div>
+                <div id="optstp"></div>
+                <label class="switchuter">
+                    <input type="checkbox" id="dwiner">
+                    <div id="slideruter"></div>
+                </label>
+                <div id="dbtbtn" onclick="mjoin()">Start</div><div id="dbqt">Quit</div>
+                <div id="qbtncls"></div>
             </div>
+            <div id="blrrtkn"></div>
+            <div id="dblgs">
+                <div id="dbtlgsttl">Logs</div>
+                <div id="dbtlgs">
+                    <span></span>
+                </div>
+                <div id="umsnd">
+                    <div id="chnmid">
+                        <marquee id="chnnmmq"></marquee>
+                    </div>
+                    <div id="msgdttl">Messages</div>
+                    <div id="chnidmsg">
+                        <div id="chniderr">No ID provided</div>
+                        <div id="chidhd"></div>
+                        <span id="chidttl">Channel ID</span><input type="text" id="chidvl"><div id="chidsbtn"><svg id="svbtn" xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="white"><path d="M21 7v12q0 .825-.587 1.413Q19.825 21 19 21H5q-.825 0-1.413-.587Q3 19.825 3 19V5q0-.825.587-1.413Q4.175 3 5 3h12Zm-9 11q1.25 0 2.125-.875T15 15q0-1.25-.875-2.125T12 12q-1.25 0-2.125.875T9 15q0 1.25.875 2.125T12 18Zm-6-8h9V6H6Z"/></svg></div><div id="chedtbtn"><svg id="dched" xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="white"><path d="m19.3 8.925l-4.25-4.2l1.4-1.4q.575-.575 1.413-.575q.837 0 1.412.575l1.4 1.4q.575.575.6 1.388q.025.812-.55 1.387ZM17.85 10.4L7.25 21H3v-4.25l10.6-10.6Z"/></svg></div><svg id="chnidld" xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="white"><circle cx="12" cy="2" r="0"><animate attributeName="r" begin="0" calcMode="spline" dur="1s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" repeatCount="indefinite" values="0;2;0;0"/></circle><circle cx="12" cy="2" r="0" fill="white" transform="rotate(45 12 12)"><animate attributeName="r" begin="0.125s" calcMode="spline" dur="1s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" repeatCount="indefinite" values="0;2;0;0"/></circle><circle cx="12" cy="2" r="0" fill="white" transform="rotate(90 12 12)"><animate attributeName="r" begin="0.25s" calcMode="spline" dur="1s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" repeatCount="indefinite" values="0;2;0;0"/></circle><circle cx="12" cy="2" r="0" fill="white" transform="rotate(135 12 12)"><animate attributeName="r" begin="0.375s" calcMode="spline" dur="1s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" repeatCount="indefinite" values="0;2;0;0"/></circle><circle cx="12" cy="2" r="0" fill="white" transform="rotate(180 12 12)"><animate attributeName="r" begin="0.5s" calcMode="spline" dur="1s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" repeatCount="indefinite" values="0;2;0;0"/></circle><circle cx="12" cy="2" r="0" fill="white" transform="rotate(225 12 12)"><animate attributeName="r" begin="0.625s" calcMode="spline" dur="1s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" repeatCount="indefinite" values="0;2;0;0"/></circle><circle cx="12" cy="2" r="0" fill="white" transform="rotate(270 12 12)"><animate attributeName="r" begin="0.75s" calcMode="spline" dur="1s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" repeatCount="indefinite" values="0;2;0;0"/></circle><circle cx="12" cy="2" r="0" fill="white" transform="rotate(315 12 12)"><animate attributeName="r" begin="0.875s" calcMode="spline" dur="1s" keySplines="0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8;0.2 0.2 0.4 0.8" repeatCount="indefinite" values="0;2;0;0"/></circle></svg>
+                    </div>
+                    <div id="msgttlc">Message</div>
+                    <div id="mmsgd">
+                        <form name="chatdc" id="chatformfordisc" onsubmit="return false;">
+                            <input type="text" id="dchnmsgc" />
+                            <input type="submit" value="Send" id="msgsendd"/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="dbmod">
+                <div id="dbttlmd">
+                    <div id="usrsttl">
+                        <svg id="ppledtlg" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" stroke="white"><g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87m-3-12a4 4 0 0 1 0 7.75"/></g></svg>
+                        
+                    </div>
+                    <span id="mgmt">Management</span>
+                    <div id="prfx">
+                        <span id="prfxn">Prefix</span>
+                        <span id="prfv">F</span>
+                    </div>
+                </div>
+                <div id="dbkl">
+                    <div id="klttl">Troll Kill</div>
+                    <input type="text" id="kltxt">
+                </div>
+                <div id="dbkl">
+                    <div id="klttl1">Memes</div>
+                    <input type="text" id="mmtxt">
+                </div>
+                <div id="dbupfp">
+                    <div id="klttlpfp">User profile picture</div>
+                    <input type="text" id="upfptxt">
+                </div>
+                <div id="dbkl">
+                    <div id="klttl2">User IQ</div>
+                    <input type="text" id="usiqtxt">
+                </div>
+                <div id="dbupfp">
+                    <div id="klttlpfp1">Who's Better</div>
+                    <input type="text" id="uwbtrtxt">
+                </div>
+                <div id="dbupfp">
+                    <div id="klttlpfp2">Truth About</div>
+                    <input type="text" id="trthtxt">
+                </div>
+                
+            </div>
+            <div id="optinf">
+                <div id="optmw">
+                    <div id="optwttl">Bot Optimization</div>
+                    <div id="mhdfq">When to use</div>
+                    <div id="mhdfqdesc">This feature should only be used when the toggle switch is blinking while the bot is offline. And if it blinks while the bot is offline then make sure its on when the bot is online</div>
+                    <div id="mhdfq1">Why use it</div>
+                    <div id="mhdfqdesc1">Sometimes due to your wifi latency the discord coudnt send or receive request due to which the bot doesnt respond,to fix that we added the optimization switch thatll resolve this matter without annoying you</div>
+                    <div id="clserwind">
+                        <div id="mclserbtn">Close</div>
+                    </div>
+                </div>
+            </div>
+            <div id="kledtwin">
+                <div id="klmwin">
+                    <div id="kledttl">Users Immunity</div>
+                    <div id="kldet">Enter the user id,Get that by right clicking the user profile and select "Copy ID"  like(744550428183887883)</div>
+                    <div id="klim1">
+                        <div id="im1">1</div>
+                        <input type="text" id="im1txt">
+                    </div>
+                    <div id="klim2">
+                        <div id="im2">2</div>
+                        <input type="text" id="im2txt">
+                    </div>
+                    <div id="klim3">
+                        <div id="im3">3</div>
+                        <input type="text" id="im3txt">
+                    </div>
+                    <div id="klim4">
+                        <div id="im4">4</div>
+                        <input type="text" id="im4txt">
+                    </div>
+                    <div id="klim5">
+                        <div id="im5">5</div>
+                        <input type="text" id="im5txt">
+                    </div>
+                    <div id="klim6">
+                        <div id="im6">6</div>
+                        <input type="text" id="im6txt">
+                    </div>
+                    <div id="klim7">
+                        <div id="im7">7</div>
+                        <input type="text" id="im7txt">
+                    </div>
+                    <div id="imsvbtn">Save and Close</div>
+                </div>
+            </div>
+            <div id="lckdb"></div>
         </div>
     </section>
 </body>

@@ -1,7 +1,7 @@
 {
-  "name": "flubel-minecraft-bot",
-  "version": "1.0.1",
-  "description": "A minecraft botting app that makes a players instance and provides utilities such as afk,autoarmor and a lot more",
+  "name": "flubel-boove",
+  "version": "1.1.0",
+  "description": "An advanced bot panel that makes minecraft/discord bot and runs them at the same time with easy controls",
   "main": "./src/index.js",
   "scripts": {
     "start": "electron .",
@@ -16,6 +16,7 @@
   "maintainer": "Fiend",
   "license": "ISC",
   "dependencies": {
+    "discord.js": "^13.7.0",
     "electron-reload": "^2.0.0-alpha.1",
     "ip": "^1.1.8",
     "minecraft-protocol": "^1.36.1",
@@ -34,19 +35,19 @@
   },
   "build": {
     "appId": "flubel.naz",
-    "productName": "Flubel MinecraftBot",
-    "copyright": "Copyright © 2022 Fiend",
+    "productName": "Boove",
+    "copyright": "Copyright © 2022 Fiend|Flubel",
     "win": {
       "target": "portable",
       "publisherName": "Fiend",
-      "icon": "src/icoon.png"
+      "icon": "src/mainlogo.png"
     },
     "linux": {
       "target": [
         "deb"
       ],
-      "icon": "src/icoon.png",
+      "icon": "src/mainlogo.png",
       "category": "Utility"
     }
-  }  
+  }
 }
