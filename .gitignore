@@ -1,3 +1,6 @@
 tests
 node_modules
 package-lock.json
+MinecraftBot-Chat
+update-window
+dist

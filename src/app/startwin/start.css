@@ -1,12 +1,13 @@
 *{
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Sofia Sans', sans-serif;
 }
 body{
     user-select: none;
     background-color: transparent;
     -webkit-app-region: no-drag;
     background-color: #111111;
+    border-radius: 7px;
 }
 #stuplgbg{
     width: 100vw;
@@ -15,6 +16,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+#mnappimglg{
+    width: 50%;
+    height: 70%;
+    background-image: url(./strtlgo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    animation: fadein 2s ease;
 }
 #cmplg{
     position: fixed;
@@ -25,8 +35,9 @@ body{
     height: 30px;
     margin-top: 30px;
     color: white;
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -40,3 +51,44 @@ body{
     height: 30px;
     margin-left: 85px;
 }
+#ldicn{
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loading svg polyline {
+    fill: none;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+  
+  .loading svg polyline#back {
+    fill: none;
+    stroke: #ff4d5033;
+  }
+  
+  .loading svg polyline#front {
+    fill: none;
+    stroke: #ff4d4f;
+    stroke-dasharray: 48, 144;
+    stroke-dashoffset: 192;
+    animation: dash_682 1.4s linear infinite;
+  }
+  
+  @keyframes dash_682 {
+    72.5% {
+      opacity: 0;
+    }
+  
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+
+  

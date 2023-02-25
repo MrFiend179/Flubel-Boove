@@ -1,49 +1,90 @@
+
+
+
+const tglswtchdscrd = document.getElementById('afkswtdrml');
+
+tglswtchdscrd.addEventListener('change',()=>{
+    setTimeout(() => {
+        
+    document.getElementById('chngswrnng').style.display = 'flex'
+    }, 100);
+})
+actmvbtntl.addEventListener('click',()=>{
+    document.getElementById('chngswrnng').style.display = 'none'
+})
+
+document.getElementById('mcsingle').style.backgroundColor = '#191919'
+maininvsldbtn.addEventListener('click',()=>{
+    document.getElementById('dispinvpc').style.display = 'flex'
+})
+dispinvpc.addEventListener('click',()=>{
+    document.getElementById('dispinvpc').style.display = 'none'
+})
+var separateDiv = document.getElementById("usrntcbinv");
+var smallDivs = document.querySelectorAll(".smalldivbinv");
+smallDivs.forEach(function(smallDiv) {
+  smallDiv.onmousemove = function(event) {
+    
+    separateDiv.style.display = "flex";
+    separateDiv.style.left = event.clientX+2 + "px";
+    separateDiv.style.top = event.clientY-33 + "px";
+  }
+  var clrbintinv = setInterval(()=>{
+    separateDiv.style.display = "none";
+},1000)
+
+  smallDiv.onmouseout = function() {
+    separateDiv.style.display = "none";
+    clearInterval(clrbintinv)
+  }
+});
+mnvgpg1.addEventListener('click',()=>{
+    document.getElementById('botchttbmc').style.display = 'none'
+    document.getElementById('botfettbmc').style.display = 'none'
+    document.getElementById('botinvtbmc').style.display = 'none'
+    document.getElementById('botlgstbmc').style.display = 'none'
+})
+mnvgpg2.addEventListener('click',()=>{
+    document.getElementById('botchttbmc').style.display = 'flex'
+    document.getElementById('botfettbmc').style.display = 'none'
+    document.getElementById('botinvtbmc').style.display = 'none'
+    document.getElementById('botlgstbmc').style.display = 'none'
+})
+mnvgpg3.addEventListener('click',()=>{
+    document.getElementById('botchttbmc').style.display = 'none'
+    document.getElementById('botfettbmc').style.display = 'flex'
+    document.getElementById('botinvtbmc').style.display = 'none'
+    document.getElementById('botlgstbmc').style.display = 'none'
+})
+mnvgpg4.addEventListener('click',()=>{
+    document.getElementById('botchttbmc').style.display = 'none'
+    document.getElementById('botfettbmc').style.display = 'none'
+    document.getElementById('botinvtbmc').style.display = 'flex'
+    document.getElementById('botlgstbmc').style.display = 'none'
+})
+mnvgpg5.addEventListener('click',()=>{
+    document.getElementById('botchttbmc').style.display = 'none'
+    document.getElementById('botfettbmc').style.display = 'none'
+    document.getElementById('botinvtbmc').style.display = 'none'
+    document.getElementById('botlgstbmc').style.display = 'flex'
+})
+function displayTime() {
+    var str = "";
+
+    var currentTime = new Date()
+    var hours = currentTime.getHours()
+    var minutes = currentTime.getMinutes()
+
+    if (minutes < 10) {
+        minutes = "0" + minutes
+    }
+    str += hours + ":" + minutes;
+    return str;
+}
+
+
 console.log('ola2')
 
-const mcsb = document.getElementById('mcsingle')
-mcsb.addEventListener('mouseover', function handleMouseOver(){
-    document.getElementById('iconmc').style.fill = 'white'
-})
-mcsb.addEventListener('mouseout', function handleMouseOut(){
-    document.getElementById('iconmc').style.fill = '#999999'
-})
-const dcsb= document.getElementById('disc')
-dcsb.addEventListener('mouseover', function handleMouseOver(){
-    document.getElementById('discbtn').style.fill = 'white'
-})
-dcsb.addEventListener('mouseout', function handleMouseOut(){
-    document.getElementById('discbtn').style.fill = '#999999'
-})
-const stsb= document.getElementById('settings')
-stsb.addEventListener('mouseover', function handleMouseOver(){
-    document.getElementById('stngs').style.fill = 'white'
-})
-stsb.addEventListener('mouseout', function handleMouseOut(){
-    document.getElementById('stngs').style.fill = '#999999'
-})
-
-const minbtn = document.getElementById('minimizeApp')
-minbtn.addEventListener('mouseover', function handleMouseOver(){
-    minbtn.style.backgroundColor = 'rgb(75, 75, 75)'
-    document.getElementById('mbtnicn').style.fill = 'white'
-    document.getElementById('mbtnicn').style.stroke = 'white'
-})
-minbtn.addEventListener('mouseout', function handleMouseOut(){
-    minbtn.style.backgroundColor = 'transparent'
-    document.getElementById('mbtnicn').style.fill = '#7F8487'
-    document.getElementById('mbtnicn').style.stroke = '#7F8487'
-})
-const clsbtn = document.getElementById('closeBtn')
-clsbtn.addEventListener('mouseover', function handleMouseOver(){
-    clsbtn.style.backgroundColor = '#cc2929'
-    document.getElementById('cbtnicn').style.fill = 'white'
-    document.getElementById('cbtnicn').style.stroke = 'white'
-})
-clsbtn.addEventListener('mouseout', function handleMouseOut(){
-    clsbtn.style.backgroundColor = 'transparent'
-    document.getElementById('cbtnicn').style.fill = '#7F8487'
-    document.getElementById('cbtnicn').style.stroke = '#7F8487'
-})
 slideruter.addEventListener('mouseover', function handleMouseOver(){
     document.getElementById('dwinerinf').style.width = '80px'
    // document.getElementById('erinf').style.display = 'flex'
@@ -78,70 +119,100 @@ optstp.addEventListener('mouseover', function handleMouseOver(){
     document.getElementById('erinf').style.opacity = '1'
 
 })
-stngs.addEventListener('click', ()=>{
-    document.getElementById('iconmc').style.fill = '#999999'
-    document.getElementById('stngs').style.fill = '#fcf5fe'
-    document.getElementById('enabstn').style.backgroundColor = '#fcf5fe'
-    document.getElementById('enabstn1').style.backgroundColor = 'transparent'
+settings.addEventListener('click', ()=>{
+    document.getElementById('chngestbl').style.top = '568px'
     document.getElementById('setwin').style.display = 'flex'
-    document.getElementById('discbtn').style.fill = '#999999'
-    document.getElementById('enabstn2').style.backgroundColor = 'transparent'
     document.getElementById('discordwin').style.display = 'none'
-    const mcsb = document.getElementById('mcsingle')
-    mcsb.addEventListener('mouseout', function handleMouseOut(){
-        document.getElementById('iconmc').style.fill = '#999999'
+    document.getElementById('settings').style.backgroundColor = '#191919'
+    document.getElementById('mcsingle').style.backgroundColor = 'transparent'
+    document.getElementById('disc').style.backgroundColor = 'transparent'
+    settings.addEventListener('mouseout', function handleMouseOut(){
+        document.getElementById('settings').style.backgroundColor = '#191919'
+
     })
-    const dcsb= document.getElementById('disc')
-    dcsb.addEventListener('mouseout', function handleMouseOut(){
-        document.getElementById('discbtn').style.fill = '#999999'
+    settings.addEventListener('mouseover', function handleMouseOver(){
+        document.getElementById('settings').style.backgroundColor = '#191919'
+
     })
-    const stsb= document.getElementById('settings')
-    stsb.addEventListener('mouseout', function handleMouseOut(){
-        document.getElementById('stngs').style.fill = 'white'
+    disc.addEventListener('mouseout', function handleMouseOut(){
+        document.getElementById('disc').style.backgroundColor = 'transparent'
+
+    })
+    disc.addEventListener('mouseover', function handleMouseOver(){
+        document.getElementById('disc').style.backgroundColor = '#191919'
+
+    })
+    mcsingle.addEventListener('mouseout', function handleMouseOut(){
+        document.getElementById('mcsingle').style.backgroundColor = 'transparent'
+
+    })
+    mcsingle.addEventListener('mouseover', function handleMouseOver(){
+        document.getElementById('mcsingle').style.backgroundColor = '#191919'
+
     })
 })
 mcsingle.addEventListener('click',()=>{
-    document.getElementById('iconmc').style.fill = '#fcf5fe'
-    document.getElementById('stngs').style.fill = '#999999'
+    document.getElementById('chngestbl').style.top = '280px'
     document.getElementById('setwin').style.display = 'none'
-    document.getElementById('enabstn').style.backgroundColor = 'transparent'
-    document.getElementById('enabstn1').style.backgroundColor = '#fcf5fe'
-    document.getElementById('discbtn').style.fill = '#999999'
-    document.getElementById('enabstn2').style.backgroundColor = 'transparent'
     document.getElementById('discordwin').style.display = 'none'
-    const mcsb = document.getElementById('mcsingle')
-    mcsb.addEventListener('mouseout', function handleMouseOut(){
-        document.getElementById('iconmc').style.fill = 'white'
+    document.getElementById('settings').style.backgroundColor = 'transparent'
+    document.getElementById('mcsingle').style.backgroundColor = '#191919'
+    document.getElementById('disc').style.backgroundColor = 'transparent'
+    settings.addEventListener('mouseout', function handleMouseOut(){
+        document.getElementById('settings').style.backgroundColor = 'transparent'
+
     })
-    const dcsb= document.getElementById('disc')
-    dcsb.addEventListener('mouseout', function handleMouseOut(){
-        document.getElementById('discbtn').style.fill = '#999999'
+    settings.addEventListener('mouseover', function handleMouseOver(){
+        document.getElementById('settings').style.backgroundColor = '#191919'
+
     })
-    const stsb= document.getElementById('settings')
-    stsb.addEventListener('mouseout', function handleMouseOut(){
-        document.getElementById('stngs').style.fill = '#999999'
+    mcsingle.addEventListener('mouseout', function handleMouseOut(){
+        document.getElementById('mcsingle').style.backgroundColor = '#191919'
+
+    })
+    mcsingle.addEventListener('mouseover', function handleMouseOver(){
+        document.getElementById('mcsingle').style.backgroundColor = '#191919'
+
+    })
+    disc.addEventListener('mouseout', function handleMouseOut(){
+        document.getElementById('disc').style.backgroundColor = 'transparent'
+
+    })
+    disc.addEventListener('mouseover', function handleMouseOver(){
+        document.getElementById('disc').style.backgroundColor = '#191919'
+
     })
 })
 disc.addEventListener('click',()=>{
-    document.getElementById('discbtn').style.fill = '#fcf5fe'
-    document.getElementById('iconmc').style.fill = '#999999'
-    document.getElementById('stngs').style.fill = '#999999'
+    document.getElementById('chngestbl').style.top = '334px'
     document.getElementById('setwin').style.display = 'none'
-    document.getElementById('enabstn2').style.backgroundColor = '#fcf5fe'
-    document.getElementById('enabstn').style.backgroundColor = 'transparent'
-    document.getElementById('enabstn1').style.backgroundColor = 'transparent'
     document.getElementById('discordwin').style.display = 'flex'
-    const mcsb = document.getElementById('mcsingle')
-    mcsb.addEventListener('mouseout', function handleMouseOut(){
-        document.getElementById('iconmc').style.fill = '#999999'
+    document.getElementById('settings').style.backgroundColor = 'transparent'
+    document.getElementById('mcsingle').style.backgroundColor = 'transparent'
+    document.getElementById('disc').style.backgroundColor = '#191919'
+    settings.addEventListener('mouseout', function handleMouseOut(){
+        document.getElementById('settings').style.backgroundColor = 'transparent'
+
     })
-    const dcsb= document.getElementById('disc')
-    dcsb.addEventListener('mouseout', function handleMouseOut(){
-        document.getElementById('discbtn').style.fill = 'white'
+    settings.addEventListener('mouseover', function handleMouseOver(){
+        document.getElementById('settings').style.backgroundColor = '#191919'
+
     })
-    const stsb= document.getElementById('settings')
-    stsb.addEventListener('mouseout', function handleMouseOut(){
-        document.getElementById('stngs').style.fill = '#999999'
+    mcsingle.addEventListener('mouseout', function handleMouseOut(){
+        document.getElementById('mcsingle').style.backgroundColor = 'transparent'
+
+    })
+    mcsingle.addEventListener('mouseover', function handleMouseOver(){
+        document.getElementById('mcsingle').style.backgroundColor = '#191919'
+
+    })
+    disc.addEventListener('mouseout', function handleMouseOut(){
+        document.getElementById('disc').style.backgroundColor = '#191919'
+
+    })
+    disc.addEventListener('mouseover', function handleMouseOver(){
+        document.getElementById('disc').style.backgroundColor = '#191919'
+
     })
 })
 
@@ -162,7 +233,7 @@ si.mem().then(data =>{
     const dats3 = dats2*93/100000
     document.getElementById('st6n').innerText = `${dats3.toFixed(1)} GB`
   })
-
+/*
 var checkboxmd = document.getElementById('afkswtdrml');
 checkboxmd.addEventListener('change', function () {
   if (checkboxmd.checked) {
@@ -200,7 +271,7 @@ checkboxmd.addEventListener('change', function () {
     document.getElementById('discbtn').style.fill = '#666666'
     document.getElementById('stngs').style.fill = '#444444'
     document.getElementById('enabstn').style.backgroundColor = '#444444'
-    stngs.addEventListener('click', ()=>{
+    settings.addEventListener('click', ()=>{
         document.getElementById('iconmc').style.fill = '#666666'
         document.getElementById('discbtn').style.fill = '#666666'
         document.getElementById('stngs').style.fill = '#444444'
@@ -290,9 +361,6 @@ checkboxmd.addEventListener('change', function () {
     document.getElementById('invt').style.color = '#585858'
     document.getElementById('pj').style.color = '#585858'
     document.getElementById('bcbtns').style.color = '#333333'
-    document.getElementById('rcb').style.backgroundColor = '#c3c3c3'
-    document.getElementById('mbtn').style.backgroundColor = '#c3c3c3'
-    document.getElementById('quit').style.backgroundColor = '#c3c3c3'
     document.getElementById('dbtbtn').style.backgroundColor = '#c3c3c3'
     document.getElementById('dbqt').style.backgroundColor = '#c3c3c3'
     document.getElementById('dbtbtn').style.color = '#333333'
@@ -678,8 +746,8 @@ else {
     document.getElementById('mainint').style.background = 'linear-gradient(-45deg, #252525,#333233,#171717,#333233)'
     document.getElementById('mainint').style.backgroundSize = '400% 400%'
     document.getElementById('descset').style.color = 'white'
-    document.getElementById('nav').style.backgroundColor = '#202020'
-    document.getElementById('changer').style.backgroundColor = '#202020'
+    document.getElementById('nav').style.backgroundColor = '#191919'
+    document.getElementById('changer').style.backgroundColor = '#191919'
     document.getElementById('titlemain').style.color = 'rgb(158, 158, 158)'
     document.getElementById('iconmc').style.fill = '#999999'
     document.getElementById('discbtn').style.fill = '#999999'
@@ -752,12 +820,12 @@ stsb.addEventListener('mouseout', function handleMouseOut(){
 
     })
     document.getElementById('mnimg').style.backgroundColor = '#252525'
-    document.getElementById('network').style.backgroundColor = '#202020'
+    document.getElementById('network').style.backgroundColor = '#191919'
     document.getElementById('mainapps').style.backgroundColor = '#111111'
     document.getElementById('pingms').style.backgroundColor = '#3f3f3f'
     document.getElementById('ssid').style.backgroundColor = '#3f3f3f'
     document.getElementById('ntype').style.backgroundColor = '#3f3f3f'
-    document.getElementById('chat').style.backgroundColor = '#202020'
+    document.getElementById('chat').style.backgroundColor = '#191919'
     document.getElementById('pingt').style.color = 'rgb(196,196,196)'
     document.getElementById('pingd').style.color = 'white'
     document.getElementById('ssidn').style.color = 'white'
@@ -767,21 +835,18 @@ stsb.addEventListener('mouseout', function handleMouseOut(){
     document.getElementById('username').style.color = 'rgb(131, 131, 131)'
     document.getElementById('password').style.color = 'rgb(131, 131, 131)'
     document.getElementById('version').style.color = 'rgb(131, 131, 131)'
-    document.getElementById('verin').style.backgroundColor = '#202020'
+    document.getElementById('verin').style.backgroundColor = '#191919'
     document.getElementById('verin').style.color = 'white'
-    document.getElementById('botinv').style.backgroundColor = '#202020'
-    document.getElementById('playerlist').style.backgroundColor = '#202020'
+    document.getElementById('botinv').style.backgroundColor = '#191919'
+    document.getElementById('playerlist').style.backgroundColor = '#191919'
     document.getElementById('plist').style.backgroundColor = '#252525'
     document.getElementById('invt').style.color = 'rgb(131,131,131)'
     document.getElementById('pj').style.color = 'rgb(131,131,131)'
-    document.getElementById('hostin').style.border = '1px solid #202020'
-    document.getElementById('portin').style.border = '1px solid #202020'
-    document.getElementById('userin').style.border = '1px solid #202020'
-    document.getElementById('passin').style.border = '1px solid #202020'
+    document.getElementById('hostin').style.border = '1px solid #191919'
+    document.getElementById('portin').style.border = '1px solid #191919'
+    document.getElementById('userin').style.border = '1px solid #191919'
+    document.getElementById('passin').style.border = '1px solid #191919'
     document.getElementById('bcbtns').style.color = 'white'
-    document.getElementById('rcb').style.backgroundColor = '#303030'
-    document.getElementById('mbtn').style.backgroundColor = '#303030'
-    document.getElementById('quit').style.backgroundColor = '#303030'
     document.getElementById('dbtbtn').style.backgroundColor = '#303030'
     document.getElementById('dbqt').style.backgroundColor = '#303030'
     document.getElementById('dbtbtn').style.color = 'white'
@@ -815,7 +880,7 @@ stsb.addEventListener('mouseout', function handleMouseOut(){
     document.getElementById('userInputmsg').style.color = 'white'
     document.getElementById('dchnmsgc').style.backgroundColor = '#353535'
     document.getElementById('dchnmsgc').style.color = 'white'
-    document.getElementById('bft').style.backgroundColor = '#202020'
+    document.getElementById('bft').style.backgroundColor = '#191919'
     document.getElementById('bcred').style.backgroundColor = '#151515'
     document.getElementById('winctrl').style.backgroundColor = '#151515'
     document.getElementById('bhnt').style.color = 'rgb(124,124,124)'
@@ -834,7 +899,7 @@ stsb.addEventListener('mouseout', function handleMouseOut(){
     })
     document.getElementById('wino').style.color = 'rgb(124,124,124)'
     document.getElementById('winslt').style.border = '1px solid #303030'
-    document.getElementById('pntp').style.border = '1px solid #202020'
+    document.getElementById('pntp').style.border = '1px solid #191919'
     document.getElementById('lbtn').style.backgroundColor = '#353535'
     document.getElementById('actphybtn').style.backgroundColor = '#3f3f3f'
     document.getElementById('lbtn').style.color = 'white'
@@ -964,9 +1029,9 @@ stsb.addEventListener('mouseout', function handleMouseOut(){
         btn9.style.backgroundColor = '#252525'
     })
     document.getElementById('plist').style.color = 'white'
-    document.getElementById('dblgs').style.backgroundColor = '#202020'
-    document.getElementById('discstt').style.backgroundColor = '#202020'
-    document.getElementById('dbmod').style.backgroundColor = '#202020'
+    document.getElementById('dblgs').style.backgroundColor = '#191919'
+    document.getElementById('discstt').style.backgroundColor = '#191919'
+    document.getElementById('dbmod').style.backgroundColor = '#191919'
     document.getElementById('dbtlgsttl').style.color = 'rgb(196,196,196)'
     document.getElementById('mgmt').style.color = 'rgb(196,196,196)'
     document.getElementById('dbtlgs').style.color = 'rgb(196,196,196)'
@@ -1134,7 +1199,8 @@ document.getElementById('mhdfq').style.color = 'rgb(124,124,124)'
 document.getElementById('mhdfq1').style.color = 'rgb(124,124,124)'
 document.getElementById('mhdfqdesc').style.color = 'rgb(196,196,196)'
 document.getElementById('mhdfqdesc1').style.color = 'rgb(196,196,196)'
-document.getElementById('mclserbtn').style.background = '#202020'
+document.getElementById('mclserbtn').style.background = '#191919'
 document.getElementById('mclserbtn').style.color = 'rgb(196,196,196)'
 }
 });
+*/

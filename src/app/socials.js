@@ -1,9 +1,4 @@
 console.log('ola1')
-si.wifiConnections().then(data =>{
-    document.getElementById('ssidn').innerText = data[0].ssid
-    document.getElementById('typet').innerText = data[0].iface
-})
-
 
 async function copier() {
     var copyText = document.getElementById("gthub");

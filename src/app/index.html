@@ -4,228 +4,915 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.lordicon.com/fudrjiwc.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.2/lottie.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet">
     <script defer src="./index.js"></script>
     <script defer src="./socials.js"></script>
     <script defer src="./settings.js"></script>
     <script defer src="./discord.js"></script>
     <link rel="stylesheet" href="index.css">
-    <title>Flubel</title>
+    <title>Boove</title>
 </head>
 <body>
-    <section class="mainapp" id="mainapps" class="move-area">
-        <div id="nav">
-            <img id="smllogo" src="./icons/smlgstskb.png" height="20px" width="20px">
-            <span id="apver">(v1.1.0)</span>
+    <div id="nav">
+        <span id="titlemain"></span>
+        <div id="mavblr">
+            <img id="smllogo1" src="./icons/smllicn.png" height="20px" width="19px">
+            <span id="apver">(v1.2.0)</span>
             <span id="titlemain"></span>
             <span id="minimizeApp">
-                <svg id="mbtnicn" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="#7F8487" stroke="#7f8487"><path stroke-linecap="round" stroke-width="2" d="M20 12H4"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0h24ZM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018Zm.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022Zm-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01l-.184-.092Z"/><path fill="white" d="M3 12a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Z"/></g></svg>
             </span>
             <span id="closeBtn">
-                <svg id="cbtnicn" xmlns="http://www.w3.org/2000/svg" width="25" height="25" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" fill="#7F8487"><path d="M24 9.4L22.6 8L16 14.6L9.4 8L8 9.4l6.6 6.6L8 22.6L9.4 24l6.6-6.6l6.6 6.6l1.4-1.4l-6.6-6.6L24 9.4z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="white" d="M13.46 12L19 17.54V19h-1.46L12 13.46L6.46 19H5v-1.46L10.54 12L5 6.46V5h1.46L12 10.54L17.54 5H19v1.46L13.46 12Z"/></svg>
             </span>
         </div>
-       <div id="changer">
-            <div id="enabstn"></div>
-            <div id="enabstn1"></div>
-            <div id="enabstn2"></div>
-            <div id="mcsingle">
+    </div>
+    <div id="changer">
+        <div id="abtvrsn">
+            <div id="verfd">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.2rem" height="1.2rem" viewBox="0 0 24 24"><path fill="#50c878" d="m6.7 19.3l-2.75-.6q-.375-.075-.6-.388t-.175-.687L3.45 14.8l-1.875-2.15q-.25-.275-.25-.65t.25-.65L3.45 9.2l-.275-2.825q-.05-.375.175-.688t.6-.387l2.75-.6l1.45-2.45q.2-.325.55-.425t.7.025l2.6 1.1l2.6-1.1q.35-.125.7-.025t.55.425L17.3 4.7l2.75.6q.375.075.6.387t.175.688L20.55 9.2l1.875 2.15q.25.275.25.65t-.25.65L20.55 14.8l.275 2.825q.05.375-.175.688t-.6.387l-2.75.6l-1.45 2.45q-.2.325-.55.425t-.7-.025l-2.6-1.1l-2.6 1.1q-.35.125-.7.025t-.55-.425L6.7 19.3ZM12 12Zm-1.75 2.85q.275.275.7.275t.7-.275l4.25-4.25q.3-.3.3-.713t-.3-.712q-.3-.3-.713-.3t-.712.3L10.95 12.7L9.5 11.275q-.3-.275-.713-.263T8.1 11.3q-.275.275-.275.7t.275.7l2.15 2.15Zm-.8 5.1l2.55-1.1l2.6 1.1l1.4-2.4l2.75-.65l-.25-2.8l1.85-2.1l-1.85-2.15l.25-2.8l-2.75-.6l-1.45-2.4L12 5.15l-2.6-1.1L8 6.45l-2.75.6l.25 2.8L3.65 12l1.85 2.1l-.25 2.85l2.75.6l1.45 2.4Z"/></svg>
+            </div>
+            <div id="ltstvrsn">Flubel-Boove</div>
+        </div>
+        <div id="chngestbl"></div>
+        <div id="mcsingle">
+            <div id="iconmcm">
                 <svg id="iconmc" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512" fill="#999999"><path  d="M0 0h169.847v172.501H0zm340.775 0h170.094v172.501H340.775zm0 172.502H169.847v85.915H84.785V512h85.062v-86.668h170.928V512h85.866V258.417h-85.866z"/></svg>
             </div>
-            <div id="disc">
+            <div id="mcttlicnmv">MINECRAFT BOT</div>
+        </div>
+        <div id="disc">
+            <div id="iconmcm">
                 <svg id="discbtn" xmlns="http://www.w3.org/2000/svg" width="1.7rem" height="1.7rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="#999999"><path d="M20.317 4.492c-1.53-.69-3.17-1.2-4.885-1.49a.075.075 0 0 0-.079.036c-.21.369-.444.85-.608 1.23a18.566 18.566 0 0 0-5.487 0a12.36 12.36 0 0 0-.617-1.23A.077.077 0 0 0 8.562 3c-1.714.29-3.354.8-4.885 1.491a.07.07 0 0 0-.032.027C.533 9.093-.32 13.555.099 17.961a.08.08 0 0 0 .031.055a20.03 20.03 0 0 0 5.993 2.98a.078.078 0 0 0 .084-.026a13.83 13.83 0 0 0 1.226-1.963a.074.074 0 0 0-.041-.104a13.201 13.201 0 0 1-1.872-.878a.075.075 0 0 1-.008-.125c.126-.093.252-.19.372-.287a.075.075 0 0 1 .078-.01c3.927 1.764 8.18 1.764 12.061 0a.075.075 0 0 1 .079.009c.12.098.245.195.372.288a.075.075 0 0 1-.006.125c-.598.344-1.22.635-1.873.877a.075.075 0 0 0-.041.105c.36.687.772 1.341 1.225 1.962a.077.077 0 0 0 .084.028a19.963 19.963 0 0 0 6.002-2.981a.076.076 0 0 0 .032-.054c.5-5.094-.838-9.52-3.549-13.442a.06.06 0 0 0-.031-.028ZM8.02 15.278c-1.182 0-2.157-1.069-2.157-2.38c0-1.312.956-2.38 2.157-2.38c1.21 0 2.176 1.077 2.157 2.38c0 1.312-.956 2.38-2.157 2.38Zm7.975 0c-1.183 0-2.157-1.069-2.157-2.38c0-1.312.955-2.38 2.157-2.38c1.21 0 2.176 1.077 2.157 2.38c0 1.312-.946 2.38-2.157 2.38Z"/></svg>
             </div>
-            <div id="settings">
+            <div id="mcttlicnmv">DISCORD BOT</div>
+        </div>
+        <div id="settings">
+            <div id="iconmcm">
                 <svg id="stngs" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24" fill="#999999"><path  d="M13.82 22h-3.64a1 1 0 0 1-.977-.786l-.407-1.884a8.002 8.002 0 0 1-1.535-.887l-1.837.585a1 1 0 0 1-1.17-.453L2.43 15.424a1.006 1.006 0 0 1 .193-1.239l1.425-1.3a8.1 8.1 0 0 1 0-1.772L2.623 9.816a1.006 1.006 0 0 1-.193-1.24l1.82-3.153a1 1 0 0 1 1.17-.453l1.837.585c.244-.18.498-.348.76-.5c.253-.142.513-.271.779-.386l.408-1.882A1 1 0 0 1 10.18 2h3.64a1 1 0 0 1 .976.787l.412 1.883a7.993 7.993 0 0 1 1.534.887l1.838-.585a1 1 0 0 1 1.169.453l1.82 3.153c.232.407.152.922-.193 1.239l-1.425 1.3a8.1 8.1 0 0 1 0 1.772l1.425 1.3c.345.318.425.832.193 1.239l-1.82 3.153a1 1 0 0 1-1.17.453l-1.837-.585a7.98 7.98 0 0 1-1.534.886l-.412 1.879a1 1 0 0 1-.976.786Zm-6.2-5.771l.82.6c.185.136.377.261.577.375c.188.109.38.207.579.296l.933.409l.457 2.091h2.03l.457-2.092l.933-.409c.407-.18.794-.403 1.153-.666l.82-.6l2.042.65l1.015-1.758l-1.583-1.443l.112-1.012c.05-.443.05-.89 0-1.332l-.112-1.012l1.584-1.446l-1.016-1.759l-2.041.65l-.821-.6a6.227 6.227 0 0 0-1.153-.671l-.933-.409L13.016 4h-2.03l-.46 2.092l-.93.408a6.01 6.01 0 0 0-1.153.666l-.821.6l-2.04-.65L4.565 8.88l1.583 1.441l-.112 1.013c-.05.443-.05.89 0 1.332l.112 1.012l-1.583 1.443l1.015 1.758l2.04-.65ZM11.996 16a4 4 0 1 1 0-8a4 4 0 0 1 0 8Zm0-6a2 2 0 1 0 2 2.09v.4V12a2 2 0 0 0-2-2Z"/></svg>
+            </div> 
+            <div id="mcttlicnmv">SETTINGS</div>
+        </div>
+    </div>
+    <section class="mainapp" id="mainapps" class="move-area">
+        <div id="mmcnvgtr">
+            <div id="mnnugtrmc5">
+                <div id="mnvgpg1">
+                    <lord-icon src="https://cdn.lordicon.com/ajkxzzfb.json" trigger="hover" style="width:40px;height:40px"> </lord-icon>
+                </div><!--bot info-->
+                <div id="mnvgpg2">
+                   <!-- <img src="./icons/chat2.gif" width="50px" height="50px" id="chtgfmc">-->
+                   <div id="micnn"></div>
+                </div><!--bot chat-->
+                <div id="mnvgpg3">
+                    <div id="micnnn">
+                    </div>
+                </div><!--bot features-->
+                <div id="mnvgpg4">
+                    <lord-icon src="https://cdn.lordicon.com/gzcbkoye.json" trigger="hover" style="width:40px;height:40px"></lord-icon>
+                </div><!--bot inventory-->
+                <div id="mnvgpg5">
+                    <lord-icon src="https://cdn.lordicon.com/luglsinl.json" trigger="morph" style="width:50px;height:50px"></lord-icon>
+                </div><!--bot logs-->
             </div>
         </div>
-        <div id="bos"></div>
-            <div id="network">
-                <div id="inticn"><svg id="intsvg" xmlns="http://www.w3.org/2000/svg" width="1.3em" height="1.3em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 20 20" fill="white"><path d="M1.25 10a8.75 8.75 0 1 0 17.5 0a8.75 8.75 0 0 0-17.5 0Zm16 0a7.25 7.25 0 1 1-14.5 0a7.25 7.25 0 0 1 14.5 0Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M6.25 10c0 4.522 1.491 8.25 3.75 8.25s3.75-3.728 3.75-8.25S12.259 1.75 10 1.75S6.25 5.478 6.25 10Zm6 0c0 3.762-1.195 6.75-2.25 6.75S7.75 13.762 7.75 10S8.945 3.25 10 3.25s2.25 2.988 2.25 6.75Z" clip-rule="evenodd"/><path d="m3.602 5.467l1.006-1.112c.1.09.209.18.325.267c1.271.952 3.3 1.54 5.515 1.54c1.891 0 3.652-.427 4.931-1.158c.308-.176.582-.367.819-.57l.974 1.141a6.73 6.73 0 0 1-1.048.73c-1.516.868-3.534 1.356-5.676 1.356c-2.522 0-4.865-.678-6.415-1.839a6.063 6.063 0 0 1-.431-.355Zm0 9.082l1.006 1.112c.1-.091.209-.18.325-.267c1.271-.952 3.3-1.54 5.515-1.54c1.891 0 3.652.427 4.931 1.158c.308.176.582.367.819.57l.974-1.141a6.841 6.841 0 0 0-1.048-.73c-1.516-.868-3.534-1.356-5.676-1.356c-2.522 0-4.865.678-6.415 1.839a6.06 6.06 0 0 0-.431.355ZM1.75 10.75v-1.5h16.5v1.5H1.75Z"/></g></svg></div>
-                <div id="pingms">
-                    <span id="pingt">Ping</span><span id="pingd">N/A</span>
-                </div>
-                <div id="ssid">
-                    <span id="ssidn">Null</span>
-                </div>
-                <div id="ntype">
-                    <span id="typet">Null</span>
+        <div id="botstsmc" >
+            <div id="btsttsttl">BOT STATUS</div>
+            <div id="tmabtbt">-</div>
+            <div id="btstscokd">
+                <div id="mstsbrckdl">
+                    <div id="lsstsbtmc1">
+                        Offline
+                    </div>
+                    <div id="lsstsbtmc2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.4rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#AAAAAA" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18v-3m4 3v-6m4 6v-4m0-4V9m4 5V6M3 3l18 18"/></svg>
+                        <!--<svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="#5f5" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18v-3m4 3v-6m4 6V9m4 9V6"/></svg>-->
+                    </div>
                 </div>
             </div>
-        <div id="chat">
-            <span id="cn">Minecraft Chat</span>
-            <div id="chatmsg">
-            <div id="mchat">
-                <span></span>
+            <div id="btmbthndf">
+                <div id="bthlth">
+                    <div id="bthlthttl">HEALTH</div>
+                    <div id="bthlthinf">
+                        <div id="mhltdt"></div>
+                        <div id="hlthimg"></div>
+                    </div>
+                </div>
+                <div id="cntbr"></div>
+                <div id="btfdmc">
+                    <div id="bthlthttl">FOOD</div>
+                    <div id="bthlthinf">
+                        <div id="mfoddt"></div>
+                        <div id="fodimg"></div>
+                    </div>
+                </div>
             </div>
         </div>
-        <form name="chatmc" id="chatform" onsubmit="return false;">
-            <input type="text" id="userInputmsg" />
-            <input type="submit" value="Send" id="msgsend"/>
-        </form>
-       </div>
-       <div id="botinv">
-        <span id="invt">Hotbar Items</span>
-        <div id="invitem">
-            <div id="slt36">
-                <span id="no36">36.</span>
-                <span id="item36"></span>
+        <div id="mbotinffrm">
+            <div id="mbtinfttlmc">BOT INFO</div>
+            <div id="mainbotinffrm1">
+                <div id="hostmcb">
+                    <div id="hostttl">HOST</div>
+                    <div id="hostinbg">
+                        <input type="text" id="hostin" spellcheck="false" placeholder="Server's ip">
+                    </div>
+                    <div id="errtxth">no host found</div>
+                </div>
+                <div id="portmcb">
+                    <div id="portttl">PORT</div>
+                    <div id="portinbg">
+                        <input type="number" id="portin" spellcheck="false" placeholder="25565">
+                    </div>
+                    <div id="errtxtp">no port found</div>
+                </div>
             </div>
-            <div id="slt37">
-                <span id="no37">37.</span>
-                <span id="item37"></span>
+            <div id="mainbotinffrm2">
+                <div id="usermcb">
+                    <div id="userttl">USERNAME</div>
+                    <div id="userinbg">
+                        <input type="text" id="userin" spellcheck="false" placeholder="Bot's Username">
+                    </div>
+                    <div id="errtxt">no username found</div>
+                </div>
+                <div id="portmcb">
+                    <div id="portttl">AUTH</div>
+                    <div id="authinbg">
+                        <select name="authver" id="authin">
+                            <option id="opt" value="cracked">CRACKED</option>
+                            <option id="opt" value="premium">PREMIUM</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div id="slt38">
-                <span id="no38">38.</span>
-                <span id="item38"></span>
+            <div id="mainbotinffrm2">
+                <div id="psswrdhder"></div>
+                <div id="usermcb">
+                    <div id="userttl">PASSWORD</div>
+                    <div id="userinbg">
+                        <input type="text" id="passin" spellcheck="false" placeholder="Emails password">
+                    </div>
+                </div>
+                <div id="portmcb1">
+                    <div id="verttl">VERSION</div>
+                    <div id="passinbg">
+                        <select name="mcversion" id="verin">
+                            <option id="opt">1.18.2</option>
+                            <option id="opt">1.18.1</option>
+                            <option id="opt">1.18</option>
+                            <option id="opt">1.17.1</option>
+                            <option id="opt">1.16.5</option>
+                        </select>
+                    </div>
+                </div>
             </div>
-            <div id="slt39">
-                <span id="no39">39.</span>
-                <span id="item39"></span>
+            <div id="mainbotinffrm2">
+                <div id="usermcbonjn">
+                    <div id="onjnttl">ON JOIN</div>
+                    <div id="onjninbg">
+                        <input type="text" id="onjoincht" spellcheck="false" placeholder="Message that'll be sent on join">
+                    </div>
+                </div>
+                
             </div>
-            <div id="slt40">
-                <span id="no40">40.</span>
-                <span id="item40"></span>
-            </div>
-            <div id="slt41">
-                <span id="no41">41.</span>
-                <span id="item41"></span>
-            </div>
-            <div id="slt42">
-                <span id="no42">42.</span>
-                <span id="item42"></span>
-            </div>
-            <div id="slt43">
-                <span id="no43">43.</span>
-                <span id="item43"></span>
-            </div>
-            <div id="slt44">
-                <span id="no44">44.</span>
-                <span id="item44"></span>
+            <div id="bcbtns">
+                <div id="rcb">
+                    <div id="actbtnrcc"onclick="rsnfnc()">RECONNECT</div>
+                </div>
+                <div id="mbtn">
+                    <div id="actbtnrccjn" onclick="join()">START</div>
+                </div>
+                <div id="quit">
+                    <div id="actbtnrccqt">QUIT</div>
+                </div>
             </div>
         </div>
-       </div>
-       <div id="playerlist">
-            <span id="pj">Players List</span>
-            <div id="plist"></div>
-       </div>
-       <div id="botinfo">
-        <form id="form" onsubmit="return false;">
-            <div id="title"><span id="host">Host</span>&nbsp;<span id="port">Port</span></div>
-            <input spellcheck="false" type="text" class="space" id="hostin"><input spellcheck="false" type="number" id="portin">
-            <div id="hosterr"><span id="errtxth">no host found</span><span id="errtxtp">no port found</span></div>
-            <!--<span id="username">Username</span><input type="text" class="username" spellcheck="false" id="userin">-->
-            <div id="title1"><span id="username">Username/Email</span><span id="password">Password</span><span id="version">Version</span></div>
-            <input type="text" class="username" spellcheck="false" id="userin" maxlength="85"><input type="text" class="password" spellcheck="false" id="passin" maxlength="60">
-            <select name="mcversion" id="verin">
-                <option id="opt">1.18.2</option>
-                <option id="opt">1.18.1</option>
-                <option id="opt">1.18</option>
-                <option id="opt">1.17.1</option>
-                <option id="opt">1.16.5</option>
-              </select>
-              <div id="usererr"><span id="errtxt">no username found</span></div>
-                <div id="bcbtns">
-                    <span></span><span id="rcb" onclick="join()">Reconnect</span><span id="mbtn" onclick="join()">Start</span><span id="quit">Quit</span><span></span>
-                </div>
-        </form>
-            <div id="connect">
-                <span id="icon"><svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m2 12l5.25 5l2.625-3M8 12l5.25 5L22 7m-6 0l-3.5 4"/></svg></span>
-                &nbsp;<span id="status"></span>
+        <div id="botchttbmc">
+            <div id="chngrtglswtch">
+                <label class="switchafk">
+                    <input type="checkbox" id="bnrtclrchngr">
+                    <div class="sliderafk"></div>
+                </label>
             </div>
-            <div id="bft">
-                <div id="bcred">
-                    <span id="bhnt">Health</span>
-                    <div id="bhn">
-                        <div id="hn">
-                            <span id="hnd"></span>
+            <div id="chatclrbtn">
+                <div id="mainclbtncht">SAVE</div>
+            </div>
+            <div id="chatclrbtn1">
+                <div id="mainclrbtnmchatr">CLEAR</div>
+            </div>
+            <div id="mbotinffrm1">
+                <div id="mbtchtttlmc">CHAT</div>
+                <div id="mnchtcntnr">
+                    <div id="mchattsfv"></div>
+                    <div id="mchatnw">
+                        <div id="mchat">
+                            <span style="font-family:'Minecraft Regular'"></span>
                         </div>
-                        <div id="hnp">
-                            <img src="./icons/minehi-removebg-preview (2).png" width="32px" height="30px">
+                        <div id="mchatbnry">
+                            <span></span>
                         </div>
-                    </div>
-                    <span id="bfnt">Food</span>
-                    <div id="bfn">
-                        <div id="fn">
-                            <span id="fnd"></span>
-                        </div>
-                        <div id="fnp">
-                            <img src="./icons/minefi-removebg-preview (2).png" height="32px" width="32px">
-                        </div>
-                    </div>
-                </div> 
-                <div id="winctrl">
-                    <div id="ttl">
-                        <span id="wincls">Close</span><span id="wino">Window Options</span><div id="valw"></div>
-                    </div>
-                    <div id="btl">
-                        <input type="number" id="winslt" maxlength="2" minlength="1">
-                        <span id="lbtn">L click</span>
-                        <span id="rbtn">R click</span>
+                        <form name="chatmc" onsubmit="return false;" id="msginpusr">
+                            <input type="text" id="usermsgsnd" spellcheck="true" maxlength="500">
+                            <div id="msndbtnbg">
+                                <input type="submit" value="SEND" id="sndbtn"/>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div id="afkb">
-                    <div id="tafkb"><span id="afkttl">Afk</span><div id="afkstat"></div></div>
-                    <div id="bafkb">    
-                        <label class="switch">
-                            <input type="checkbox" id="afkswt">
-                            <div class="slider"></div>
+            </div>
+        </div>
+        <div id="botfettbmc">
+            <div id="mbotinffrm1">
+                <div id="mbtchtttlmc">FUNCTIONS</div>
+                
+                <div id="afkbgbfncmc">
+                    <div id="blobwinmcbtafk"></div>
+                    <div id="sfkttlmcbfnc">AFK</div>
+                    <div id="acttglsafkmcbfnc">
+                        <label class="switchafk">
+                            <input type="checkbox" id="afktglswtchmcb">
+                            <div class="sliderafk"></div>
                         </label>
-                    </div>    
-                </div>
-                <div id="btctrlphy">
-                    <div id="btctrltl"><span id="ctrlt">Control</span><div id="indphy"></div></div>
-                    <input type="text" id="pntp">
-                    <div id="btlphy">
-                        <span id="actphybtn">Go</span>
                     </div>
                 </div>
-                <div id="utils">
-                    <div id="uttl"><span id="lt">Look</span><span id="wt">Walk</span></div>
-                    <label class="switchut0">
-                        <input type="checkbox" id="pllk">
-                        <div class="sliderut0"></div>
-                    </label>
-                    <label class="switchut1">
-                        <input type="checkbox" id="wlkp">
-                        <div class="sliderut1"></div>
-                    </label>
-                    <div id="utbl"><span id="blnk">Blinker</span><span id="armor">Armor</span></div>
-                    <label class="switchblnk">
-                        <input type="checkbox" id="w">
-                        <div class="sliderblnk"></div>
-                    </label>
-                    <label class="switcharmr">
-                        <input type="checkbox" id="armr">
-                        <div class="sliderarmr"></div>
-                    </label>
+                <div id="btgrdplcai">
+                    <div id="blobwinmcgrd"></div>
+                    <div id="sfkttlmcbfncgrd">GUARD</div>
+                    <div id="rdchngrmbg">
+                        <div id="mnmnzbtn">
+                            <div id="maincntdmc"><svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="white" d="M18 12.998H6a1 1 0 0 1 0-2h12a1 1 0 0 1 0 2z"/></svg></div>
+                        </div>
+                        <div id="mainvaltrdb">
+                            15
+                        </div>
+                        <div id="mxmxzbtn">
+                            <div id="maincntdmx">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="1.5rem" viewBox="0 0 24 24"><path fill="white" d="M11 19v-6H5v-2h6V5h2v6h6v2h-6v6Z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="mainblrcntrns">
+                        <div id="tpbrabtwpns">
+                            <div id="ttlwpns">WEAPON</div>
+                            <div id="blobprtwpns">
+                                <div id="mainblroclr"></div>
+                            </div>
+                        </div>
+                        <div id="lwbrabtshld">
+                            <div id="ttlwpns">SHIELD</div>
+                            <div id="blobprtwpns">
+                                <div id="mainblroclr1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btnstrttglsetch">
+                        <label class="switchlooker">
+                            <input type="checkbox" id="inpdifint">
+                            <div class="sliderlooker"></div>
+                        </label>
+                    </div>
                 </div>
-              <span id="htbb">Hotbar</span><span id="act">Activate Item</span>
-                <div id="bmsb">
-                    <span></span>
-                    <span id="btn1">1</span>
-                    <span id="btn2">2</span>
-                    <span id="btn3">3</span>
-                    <span id="btn4">4</span>
-                    <span id="btn5">5</span>
-                    <span id="btn6">6</span>
-                    <span id="btn7">7</span>
-                    <span id="btn8">8</span>
-                    <span id="btn9">9</span>
-                    <span></span>
+                <div id="flbabfrmrai"></div>
+                <div id="flbfrmrailckr">
+                    <div id="ltidnfrmrai"></div>
+                    <!--<lottie-player id="ltidnfrmrai" src="https://assets6.lottiefiles.com/packages/lf20_qf1pt6ua.json"  background="transparent"  speed="0"  style="width: 100px; height: 100px;"></lottie-player>-->              
+                    <div id="ntcfrmrai">NOTICE</div>
+                    <div id="noticedesc">This feature is powerful and might cause the app to lag if used at low interval (e.g 2000)</div>
+                    <div id="okagbtnusr">
+                        <div id="btnmtokcnsnt">AGREE</div>
+                    </div>
+                </div>
+                <div id="aifrmrbgdv">
+                    <div id="blobwinmcbtplrfrmr"></div>
+                    <div id="aifrmrttl">FARMER</div>
+                    <div id="crptpdvt1">
+                        <div id="crpttl">CROP TYPE</div>
+                        <div id="crpbrslctr">
+                            <select name="croptype" id="crptpmcfrmai">
+                                <option value="wheat">WHEAT</option>
+                                <option value="carrot">CARROT</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="crptpdvt12">
+                        <div id="crpttl">INTERVAL</div>
+                        <div id="crpbrslctr">
+                            <input type="number" id="intrvlfrmaibfnc" placeholder="eg. 3000">
+                        </div>
+                    </div>
+                    <div id="sdsfrmind">
+                        <div id="sdsindcttl">
+                            <div id="ttlsds">SEEDS</div>
+                            <div id="sdsindc">
+                                <div id="mindctrsds"></div>
+                            </div>
+                        </div>
+                        <div id="frmlndindcttl">
+                            <div id="frmlndttl">FARMLAND</div>
+                            <div id="sdsindc">
+                                <div id="mindctrsds1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div id="sdsfrmind1">
+                            <div id="aihndlttl">AI REGULATION</div>
+                            <div id="aihndlmtrclr">
+                                <div id="aihndlrmtrfflwplraifrmr">
+                                    <div id="actclrofaihndlrfaifrmr"></div>
+                                </div>
+                            </div>  
+                    </div>-->
+                    <div id="btmbtnsfmaifncfrmrbtmc">
+                        <div id="lsbtnbtaifnc">
+                            <div id="strtbtnfrmraifnc">EXECUTE</div>
+                        </div>
+                        <div id="rsbtnbtaifnc">
+                            <div id="stpbtnfrmraifnc">SUSPEND</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="flbabfrmrai1"></div>
+                <div id="plrflwaibtfnc">
+                    <div id="blobwinmcbtplr"></div>
+                    <div id="plrgtdvaittl">FOLLOW PLAYER</div>
+                    <div id="usrnminpbgfpwaiplr">
+                        <input type="text" id="plrttltflw">
+                    </div>
+                    <div id="aimtrfbtflwplr">
+                        <div id="aihndlttl">AI HANDLING</div>
+                        <div id="aihndlmtrclr">
+                            <div id="aihndlrmtrfflwplr">
+                                <div id="actclrofaihndlr"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="plrflebtnslrbg">
+                        <div id="plrflersbgbtn">
+                            <div id="flestrtbtn">FOLLOW</div>
+                        </div>
+                        <div id="pllflersbgbtn">
+                            <div id="flwstpbtn">STOP</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="plrklrpvp">
+                    <div id="blobwinmcbtplrpvp"></div>
+                    <div id="plrgtdvaittl">PVP</div>
+                    <div id="usrnminpbgfpwaiplr">
+                        <input type="text" id="plrtkill">
+                    </div>
+                    <div id="armrndwpn">
+                        <div id="armrindc">
+                            <div id="ttlarmrindc">ARMOR</div>
+                            <div id="mainindarmr">
+                                <div id="mainindcarmr"></div>
+                            </div>
+                        </div>
+                        <div id="wpnsindc">
+                            <div id="ttlwpnindc">WEAPON</div>
+                            <div id="mainindwpn">
+                                <div id="mainindwpns"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btmbtnspvp">
+                        <div id="lsbtnrxeplr">
+                            <div id="actbtntexeplr">START</div>
+                        </div>
+                        <div id="rsplrexestpbtn">
+                            <div id="actstpbtntexe">STOP</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="mcbwincntrl">
+                    <div id="blobwinmcbt"></div>
+                    <div id="windmvbttl">WINDOW OPTIONS</div>
+                    <div id="inpfldwin">
+                        <input type="number" id="windowopt">
+                    </div>
+                    <div id="mainlclkrclkbtnw">
+                        <div id="lclckdvdr">
+                            <div id="lclkbtnw">L click</div>
+                        </div>
+                        <div id="rclckdvdr">
+                            <div id="rclkbtnw">R click</div>
+                        </div>
+                    </div>
+                    <div id="winclswind">
+                        <div id="mainwinclsbtnmcbn">CLOSE</div>
+                    </div>
+                </div>
+                <div id="cordsgotostpper"></div>
+                <div id="botcordsgotoplc">
+                    <div id="botcntrlcordsind"></div>
+                    <div id="botgtcttl">GO TO CORDINATES</div>
+                    <div id="cordsttlxyz">
+                        <div>X</div>
+                        <div>Y</div>
+                        <div>Z</div>
+                    </div>
+                    <div id="cordsvalxyz">
+                        <div id="xcords">
+                            <input type="number" id="xcordsval" placeholder="x-pos">
+                        </div>
+                        <div id="ycords">
+                            <input type="text" id="ycordsval"  placeholder="null">
+                        </div>
+                        <div id="zcords">
+                            <input type="number" id="zcordsval" placeholder="z-pos">
+                        </div>
+                    </div>
+                    <div id="gotocordstartbtn">
+                        <div id="strtbtnbgbdy">
+                            <div id="gotocordsmbtn">START</div>
+                        </div>
+                        <div id="strtbtnbgbdy1">
+                            <div id="gotocordsmbtnstop">STOP</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="plrgotostpper"></div>
+                <div id="mcbwincntrl1">
+                    <div id="blobwinmcbtgtp"></div>
+                    <div id="windmvbttl">MOVEMENT</div>
+                    <div id="facettlbt">
+                        <div>LOOK AT:</div>
+                    </div>
+                    <div id="actnswebgcnt">
+                        <div id="north">N</div>
+                        <div id="south">S</div>
+                        <div id="east">E</div>
+                        <div id="west">W</div>
+                    </div>
+                    <div id="sprntoptmvmnt">
+                        <div id="sprntttl">SPRINT:</div>
+                        <div id="sprnttglswtch">
+                            <label class="switchblnk">
+                                <input type="checkbox" id="sprnt">
+                                <div class="sliderblnk"></div>
+                            </label>
+                        </div>
+                    </div>
+                    <div id="strtostpmvmnt">
+                        <div id="strtmvmnt">
+                            <div id="mainstrtbtnwlk">WALK</div>
+                        </div>
+                        <div id="stpmvmnt">
+                            <div id="mainstomvmntbtn">STOP</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="plrlistbg">
+                    <div id="ttlplrlistbtmcfnc">PLAYER LIST</div>
+                    <div id="actplrlstfmcb">
+                        <div id="actplrttllstmcfnc">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <!--<lottie-player src="https://assets6.lottiefiles.com/packages/lf20_qf1pt6ua.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" loop autoplay></lottie-player>-->
+                <div id="utilsfmcbtfnc">
+                    <div id="utlsttlmcbfnc">UTILS</div>
+                    <div id="utlsmcntbg">
+                        <div id="lsutilsbg">
+                            <div id="ttlforutls">
+                                <div id="ttl1util">ARMOR</div>
+                                <div id="ttl2util">BLINKER</div>
+                                <div id="ttl3util">LOOK</div>
+                            </div>
+                            <div id="rsltutiltglswtch">
+                                <div id="tglswtmbg1">
+                                    <label class="switcharmrfnc">
+                                        <input type="checkbox" id="armrfnc">
+                                        <div class="sliderarmrfnc"></div>
+                                    </label>
+                                </div>
+                                <div id="tglswtmbg2">
+                                    <label class="switchblnkrfnc">
+                                        <input type="checkbox" id="blnkr">
+                                        <div class="sliderblnkrfnc"></div>
+                                    </label>
+                                </div>
+                                <div id="tglswtmbg3">
+                                    <label class="switchlooker">
+                                        <input type="checkbox" id="looker">
+                                        <div class="sliderlooker"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="rsutilsbg">
+                            <div id="ttlforutls">
+                                <div id="ttl1util">AUTO TOTEM</div>
+                                <div id="ttl2util">AUTO EAT</div>
+                                <div id="ttl3util">SLEEP</div>
+                            </div>
+                            <div id="rsltutiltglswtch">
+                                <div id="tglswtmbg1">
+                                    <label class="switcharmrfnc">
+                                        <input type="checkbox" id="atmttm">
+                                        <div class="sliderarmrfnc"></div>
+                                    </label>
+                                </div>
+                                <div id="tglswtmbg2">
+                                    <label class="switchblnkrfnc">
+                                        <input type="checkbox" id="atmeat">
+                                        <div class="sliderblnkrfnc"></div>
+                                    </label>
+                                </div>
+                                <div id="tglswtmbg3">
+                                    <label class="switchlooker">
+                                        <input type="checkbox" id="slp">
+                                        <div class="sliderlooker"></div>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="botinvtbmc">
+            <div id="mbotinffrm2">
+                <div id="mbtchtttlmc2">INVENTORY</div>
+            </div>
+            <div id="dispinvpc">
+                <div id="botpcinvrfr"></div>
+            </div>
+            <div id="mbrfesdtlsinv">
+                <div id="invitmnpic">
+                    <div id="maininvsldbtn">
+                        <div id="mnttldrpdn">REFERENCE</div>
+                        <div id="drpdndv">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="white" d="m8.71 11.71l2.59 2.59c.39.39 1.02.39 1.41 0l2.59-2.59c.63-.63.18-1.71-.71-1.71H9.41c-.89 0-1.33 1.08-.7 1.71z"/></svg>
+                        </div>
+                    </div>
+                </div>
+                <div id="thrwallinv">
+                    <div id="actbtnthrwall">THROW ALL</div>
+                </div>
+            </div>
+            <div id="usrntcbinv">
+                <div id="isrnvgtr">
+                    Double Click to select item [36]
+                </div>
+            </div>
+            <div id="sltnumowbsitm">
+                <div id="slotitmn">SLOT</div>
+                <div id="sltslctr">
+                    <select name="userhtbrslt" id="htbrsndslt">
+                        <option id="opt">36</option>
+                        <option id="opt">37</option>
+                        <option id="opt">38</option>
+                        <option id="opt">39</option>
+                        <option id="opt">40</option>
+                        <option id="opt">41</option>
+                        <option id="opt">42</option>
+                        <option id="opt">43</option>
+                        <option id="opt">44</option>
+                    </select>
+                </div>
+            </div>
+            <div id="htbritmcntrls36">
+                <div id="htbrttlcntrl36">SLOT : 36</div>
+                <div id="htbritm36btn1">
+                    <div id="itm36htbract">ACTIVATE</div>
+                </div>
+                <div id="htbritm36btn2">
+                    <div id="itm36htbrthr">THROW</div>
+                </div>
+            </div>
+            <div id="htbritmcntrls37">
+                <div id="htbrttlcntrl37">SLOT : 37</div>
+                <div id="htbritm37btn1">
+                    <div id="itm37htbract">ACTIVATE</div>
+                </div>
+                <div id="htbritm37btn2">
+                    <div id="itm37htbrthr">THROW</div>
+                </div>
+            </div>
+            <div id="htbritmcntrls38">
+                <div id="htbrttlcntrl38">SLOT : 38</div>
+                <div id="htbritm38btn1">
+                    <div id="itm38htbract">ACTIVATE</div>
+                </div>
+                <div id="htbritm38btn2">
+                    <div id="itm38htbrthr">THROW</div>
+                </div>
+            </div>
+            <div id="htbritmcntrls39">
+                <div id="htbrttlcntrl39">SLOT : 39</div>
+                <div id="htbritm39btn1">
+                    <div id="itm39htbract">ACTIVATE</div>
+                </div>
+                <div id="htbritm39btn2">
+                    <div id="itm39htbrthr">THROW</div>
+                </div>
+            </div>
+            <div id="htbritmcntrls40">
+                <div id="htbrttlcntrl40">SLOT : 40</div>
+                <div id="htbritm40btn1">
+                    <div id="itm40htbract">ACTIVATE</div>
+                </div>
+                <div id="htbritm40btn2">
+                    <div id="itm40htbrthr">THROW</div>
+                </div>
+            </div>
+            <div id="htbritmcntrls41">
+                <div id="htbrttlcntrl41">SLOT : 41</div>
+                <div id="htbritm41btn1">
+                    <div id="itm41htbract">ACTIVATE</div>
+                </div>
+                <div id="htbritm41btn2">
+                    <div id="itm41htbrthr">THROW</div>
+                </div>
+            </div>
+            <div id="htbritmcntrls42">
+                <div id="htbrttlcntrl42">SLOT : 42</div>
+                <div id="htbritm42btn1">
+                    <div id="itm42htbract">ACTIVATE</div>
+                </div>
+                <div id="htbritm42btn2">
+                    <div id="itm42htbrthr">THROW</div>
+                </div>
+            </div>
+            <div id="htbritmcntrls43">
+                <div id="htbrttlcntrl43">SLOT : 43</div>
+                <div id="htbritm43btn1">
+                    <div id="itm43htbract">ACTIVATE</div>
+                </div>
+                <div id="htbritm43btn2">
+                    <div id="itm43htbrthr">THROW</div>
+                </div>
+            </div>
+            <div id="htbritmcntrls44">
+                <div id="htbrttlcntrl44">SLOT : 44</div>
+                <div id="htbritm44btn1">
+                    <div id="itm44htbract">ACTIVATE</div>
+                </div>
+                <div id="htbritm44btn2">
+                    <div id="itm44htbrthr">THROW</div>
+                </div>
+            </div>
+            <div id="botinvtbllst">
+                <div id="lsbtinv">
+                    <div id="bgitm5" class="smalldivbinv">
+                        <div id="itmno5">5.</div>
+                        <div id="itmn5"></div>
+                        <div id="itmcnt5"></div>
+                    </div>
+                    <div id="bgitm6"class="smalldivbinv">
+                        <div id="itmno6">6.</div>
+                        <div id="itmn6"></div>
+                        <div id="itmcnt6"></div>
+                    </div>
+                    <div id="bgitm7"class="smalldivbinv">
+                        <div id="itmno7">7.</div>
+                        <div id="itmn7"></div>
+                        <div id="itmcnt7"></div>
+                    </div>
+                    <div id="bgitm8" class="smalldivbinv">
+                        <div id="itmno8">8.</div>
+                        <div id="itmn8"></div>
+                        <div id="itmcnt8"></div>
+                    </div>
+                    <div id="bgitm9" class="smalldivbinv">
+                        <div id="itmno9">9.</div>
+                        <div id="itmn9"></div>
+                        <div id="itmcnt9"></div>
+                    </div>
+                    <div id="bgitm10" class="smalldivbinv">
+                        <div id="itmno10">10.</div>
+                        <div id="itmn10"></div>
+                        <div id="itmcnt10"></div>
+                    </div>
+                    <div id="bgitm11" class="smalldivbinv">
+                        <div id="itmno11">11.</div>
+                        <div id="itmn11"></div>
+                        <div id="itmcnt11"></div>
+                    </div>
+                    <div id="bgitm12" class="smalldivbinv">
+                        <div id="itmno12">12.</div>
+                        <div id="itmn12"></div>
+                        <div id="itmcnt12"></div>
+                    </div>
+                    <div id="bgitm13" class="smalldivbinv">
+                        <div id="itmno13">13.</div>
+                        <div id="itmn13"></div>
+                        <div id="itmcnt13"></div>
+                    </div>
+                    <div id="bgitm14" class="smalldivbinv">
+                        <div id="itmno14">14.</div>
+                        <div id="itmn14"></div>
+                        <div id="itmcnt14"></div>
+                    </div>
+                    <div id="bgitm15" class="smalldivbinv">
+                        <div id="itmno15">15.</div>
+                        <div id="itmn15"></div>
+                        <div id="itmcnt15"></div>
+                    </div>
+                    <div id="bgitm16" class="smalldivbinv">
+                        <div id="itmno16">16.</div>
+                        <div id="itmn16"></div>
+                        <div id="itmcnt16"></div>
+                    </div>
+                    <div id="bgitm17" class="smalldivbinv">
+                        <div id="itmno17">17.</div>
+                        <div id="itmn17"></div>
+                        <div id="itmcnt17"></div>
+                    </div>
+                    <div id="bgitm18"class="smalldivbinv">
+                        <div id="itmno5" >18.</div>
+                        <div id="itmn18"></div>
+                        <div id="itmcnt18"></div>
+                    </div>
+                </div>
+                <div id="rsbtinv">
+                    <div id="bgitm19"class="smalldivbinv">
+                        <div id="itmno6">19.</div>
+                        <div id="itmn19"></div>
+                        <div id="itmcnt19"></div>
+                    </div>
+                    <div id="bgitm20"class="smalldivbinv">
+                        <div id="itmno7">20.</div>
+                        <div id="itmn20"></div>
+                        <div id="itmcnt20"></div>
+                    </div>
+                    <div id="bgitm21"class="smalldivbinv">
+                        <div id="itmno8">21.</div>
+                        <div id="itmn21"></div>
+                        <div id="itmcnt21"></div>
+                    </div>
+                    <div id="bgitm22"class="smalldivbinv">
+                        <div id="itmno9">22.</div>
+                        <div id="itmn22"></div>
+                        <div id="itmcnt22"></div>
+                    </div>
+                    <div id="bgitm23" class="smalldivbinv">
+                        <div id="itmno10">23.</div>
+                        <div id="itmn23"></div>
+                        <div id="itmcnt23"></div>
+                    </div>
+                    <div id="bgitm24" class="smalldivbinv">
+                        <div id="itmno11">24.</div>
+                        <div id="itmn24"></div>
+                        <div id="itmcnt24"></div>
+                    </div>
+                    <div id="bgitm25" class="smalldivbinv">
+                        <div id="itmno12">25.</div>
+                        <div id="itmn25"></div>
+                        <div id="itmcnt25"></div>
+                    </div>
+                    <div id="bgitm26" class="smalldivbinv">
+                        <div id="itmno13">26.</div>
+                        <div id="itmn26"></div>
+                        <div id="itmcnt26"></div>
+                    </div>
+                    <div id="bgitm27" class="smalldivbinv">
+                        <div id="itmno14">27.</div>
+                        <div id="itmn27"></div>
+                        <div id="itmcnt27"></div>
+                    </div>
+                    <div id="bgitm28" class="smalldivbinv">
+                        <div id="itmno15">28.</div>
+                        <div id="itmn28"></div>
+                        <div id="itmcnt28"></div>
+                    </div>
+                    <div id="bgitm29" class="smalldivbinv">
+                        <div id="itmno16">29.</div>
+                        <div id="itmn29"></div>
+                        <div id="itmcnt29"></div>
+                    </div>
+                    <div id="bgitm30" class="smalldivbinv">
+                        <div id="itmno17">30.</div>
+                        <div id="itmn30"></div>
+                        <div id="itmcnt30"></div>
+                    </div>
+                    <div id="bgitm31"class="smalldivbinv">
+                        <div id="itmno5">31.</div>
+                        <div id="itmn31"></div>
+                        <div id="itmcnt31"></div>
+                    </div>
+                    <div id="bgitm32"class="smalldivbinv">
+                        <div id="itmno6">32.</div>
+                        <div id="itmn32"></div>
+                        <div id="itmcnt32"></div>
+                    </div>
+                </div>
+                <div id="rrsbtinv">
+                    <div id="bgitm33"class="smalldivbinv">
+                        <div id="itmno7">33.</div>
+                        <div id="itmn33"></div>
+                        <div id="itmcnt33"></div>
+                    </div>
+                    <div id="bgitm34"class="smalldivbinv">
+                        <div id="itmno8">34.</div>
+                        <div id="itmn34"></div>
+                        <div id="itmcnt34"></div>
+                    </div>
+                    <div id="bgitm35"class="smalldivbinv">
+                        <div id="itmno9">35.</div>
+                        <div id="itmn35"></div>
+                        <div id="itmcnt35"></div>
+                    </div>
+                    <div id="htbrttl">HOTBAR</div>
+                    <div id="htbritmscnt">
+                        <div id="tpspcdv"></div>
+                        <div id="bgitm36">
+                            <div id="itmno10">36.</div>
+                            <div id="itmn36"></div>
+                            <div id="itmcnt36"></div>
+                        </div>
+                        <div id="bgitm37">
+                            <div id="itmno11">37.</div>
+                            <div id="itmn37"></div>
+                            <div id="itmcnt37"></div>
+                        </div>
+                        <div id="bgitm38">
+                            <div id="itmno12">38.</div>
+                            <div id="itmn38"></div>
+                            <div id="itmcnt38"></div>
+                        </div>
+                        <div id="bgitm39">
+                            <div id="itmno13">39.</div>
+                            <div id="itmn39"></div>
+                            <div id="itmcnt39"></div>
+                        </div>
+                        <div id="bgitm40">
+                            <div id="itmno14">40.</div>
+                            <div id="itmn40"></div>
+                            <div id="itmcnt40"></div>
+                        </div>
+                        <div id="bgitm41">
+                            <div id="itmno15">41.</div>
+                            <div id="itmn41"></div>
+                            <div id="itmcnt41"></div>
+                        </div>
+                        <div id="bgitm42">
+                            <div id="itmno16">42.</div>
+                            <div id="itmn42"></div>
+                            <div id="itmcnt42"></div>
+                        </div>
+                        <div id="bgitm43">
+                            <div id="itmno17">43.</div>
+                            <div id="itmn43"></div>
+                            <div id="itmcnt43"></div>
+                        </div>
+                        <div id="bgitm44">
+                            <div id="itmno17">44.</div>
+                            <div id="itmn44"></div>
+                            <div id="itmcnt44"></div>
+                        </div>
+                    </div>
+                    <div id="bgitm45" class="smalldivbinv">
+                        <div id="itmno17">45.</div>
+                        <div id="itmn45"></div>
+                        <div id="itmcnt45"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="botlgstbmc">
+            <div id="mbotinffrm1">
+                <div id="mbtchtttlmc">LOGS</div>
+                <div id="mainlogsbr">
+                    <div id="actlogsmcb"></div>
                 </div>
             </div>
         </div>
         <div id="setwin">
+            <div id="chngswrnng">
+                <div id="mnwndwts">
+                    <div id="mainttlfwsrst">RESTART</div>
+                    <div id="maininfabtrst">
+                        <div id="maininfsbtrstrl">
+                            In order for the current modification to settings to take place, the app needs to restart. Are you sure you want to restart the app?
+                        </div>
+                    </div>
+                    <div id="mainbtnslrtrst">
+                        <div id="lsbtnrst">
+                            <div id="actmvbtntr">RESTART</div>
+                        </div>
+                        <div id="rsbtnrst">
+                            <div id="actmvbtntl">CANCEL</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div id="introapp">
                 <div id="mainint">
                         <div id="mnimg">
-                            <img src="./icons/logo4.png" height="70px" width="40px">
+                            <div id="actcmplgo"></div>
                         </div>
                         <span id="titlepro">Boove by Flubel</span>
                         <span id="cprymrk">© Flubel by Fiend</span>
                         <span id="mainidn1">Flubel</span>
                         <span id="mainidn">Flubel</span>
-                        <div id="descset">We here at Flubel aim to make the best lightweight softwares to provide you benifit at ease</div>
+                        <div id="descset">The worlds most open and advaced easy to use softwares by Flubel</div>
                         <div id="socialsset">
                             <svg id="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
                             <svg id="checkmark1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle1" cx="26" cy="26" r="25" fill="none"/> <path class="checkmark__check1" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/></svg>
@@ -255,6 +942,22 @@
                             <input id="web" type="hidden" value="https://flubel.cf/">
                             <input id="yt" type="hidden" value="https://www.youtube.com/channel/UCha9zIeWFX58QASlKFW3CwQ">
                             <input id="discser" type="hidden" value="https://discord.com/invite/ceAv3Njqmk">
+                </div>
+            </div>
+            <div id="lbtmcntrastb">  
+           
+            <div id="realset">
+                <div id="realsett">Settings</div>
+                <div id="relsetinfo">
+                    <div id="realdrlms">
+                        <div id="drlm">Discord Prescence</div>
+                        <div id="drmls">
+                            <label class="switchdrml">
+                                <input type="checkbox" id="afkswtdrml">
+                                <div class="sliderdrml"></div>
+                            </label>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div id="userstat">
@@ -294,21 +997,6 @@
                     </div>
                 </div>
             </div>
-            <div id="realset">
-                <div id="realsett">Settings</div>
-                <div id="relsetinfo">
-                    <div id="realdrlms">
-                        <div id="drlm">Background</div>
-                        <div id="drmls">
-                            <div id="drmdl">Dark Mode</div>
-                            <label class="switchdrml">
-                                <input type="checkbox" id="afkswtdrml">
-                                <div class="sliderdrml"></div>
-                            </label>
-                            <div id="lmdl">Light Mode</div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
         <div id="discordwin">
@@ -352,7 +1040,16 @@
                     <input type="checkbox" id="dwiner">
                     <div id="slideruter"></div>
                 </label>
-                <div id="dbtbtn" onclick="mjoin()">Start</div><div id="dbqt">Quit</div>
+                
+                <!--<div id="dbtbtn" onclick="mjoin()">Start</div><div id="dbqt">Quit</div>-->
+                <div id="dbtbtn">
+                    <div id="acrstrtbtndc" onclick="mjoin()">
+                        START
+                    </div>
+                </div>
+                <div id="dbqtot">
+                    <div id="dbqt">QUIT</div>
+                </div>
                 <div id="qbtncls"></div>
             </div>
             <div id="blrrtkn"></div>
@@ -469,4 +1166,8 @@
         </div>
     </section>
 </body>
+
+<script >
+    
+</script>
 </html>
