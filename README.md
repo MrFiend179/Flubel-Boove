@@ -1,5 +1,5 @@
 
-# Flubel MinecraftBot
+# Flubel MinecraftBot v1.2.0
 
 
 ![Social](https://img.shields.io/twitter/follow/Flubel_?color=%231DA1F2&label=Twitter&style=for-the-badge)
