@@ -35,7 +35,7 @@ src3(){
 32bit3(){
     wget https://github.com/MrFiend179/Flubel-Boove/releases/download/v1.2.0/Boove-Setup-1.2.0-x32.exe
 }
-echo "Starting to download Flubel MinecraftBot app :D"
+echo "Starting to download Flubel-Boove :D"
 read   -n 1 -p $'Press any key to Continue\n'
 echo " Starting....."
 echo 'Select The System Version/Type'
