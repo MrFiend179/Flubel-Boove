@@ -1,5 +1,5 @@
 
-# Flubel MinecraftBot v1.2.0
+# Flubel Boove
 
 
 ![Social](https://img.shields.io/twitter/follow/Flubel_?color=%231DA1F2&label=Twitter&style=for-the-badge)
@@ -22,7 +22,16 @@
 - Playerlist
 - Chat
 - Go to Player (A new feature only made by us)
-- Color chat
+- Colored chat
+- Ai Farming ability
+- Ai player follower
+- PvP
+- Auto-Totem
+- Auto eater
+- Sleeper
+- Colored mc chat with font
+- logs
+- current time [day, night]
 
 **Discord Bot**
 - custom activity
@@ -42,38 +51,24 @@
 | v1.0.0      |     ✅   |    ❌   |  ❌    |
 | v1.0.1      |     ✅   |    ✅   |  ❌    |
 | v1.1.0      |     ✅   |    ❌   |  ❌    |
+| v1.2.0      |     ✅   |    ❌   |  ❌    |
 
 
 # ScreenShots
 
-**Main app (Dark Mode)**
+![App Screenshot](https://www.flubel.cf/flubelbooveimg/flbmc1bv.png)
 
-**Minecraft window**
+![App Screenshot](https://www.flubel.cf/flubelbooveimg/flbmc2bv.png)
 
-![App Screenshot](https://pbs.twimg.com/media/FjtJ33oXEAMje2H?format=jpg&name=small)
+![App Screenshot](https://www.flubel.cf/flubelbooveimg/flbmc3bv.png)
 
-**Discord window**
+![App Screenshot](https://www.flubel.cf/flubelbooveimg/flbmc4bv.png)
 
-![App Screenshot](https://pbs.twimg.com/media/FjtJ33pXgAU4qCe?format=jpg&name=small)
+![App Screenshot](https://www.flubel.cf/flubelbooveimg/flbmc5bv.png)
 
-**Settings window**
+![App Screenshot](https://www.flubel.cf/flubelbooveimg/flbdc1bv.png)
 
-![App Screenshot](https://pbs.twimg.com/media/FjtJ33pXEAAvBpW?format=jpg&name=small)
-
-**Main app (Light Mode)**
-
-**Minecraft window**
-
-![App Screenshot](https://pbs.twimg.com/media/FjtLgcOWIAAz0wy?format=jpg&name=small)
-
-**Discord window**
-
-![App Screenshot](https://pbs.twimg.com/media/FjtLgcNXgAMKB_8?format=jpg&name=small)
-
-**Settings Window**
-
-![App Screenshot](https://pbs.twimg.com/media/FjtLgcOXwAA2rBQ?format=jpg&name=small)
-
+![App Screenshot](https://www.flubel.cf/flubelbooveimg/flbst1bv.png)
 
 # Run Shell Script
 In order to run the shell script follow the following steps:
