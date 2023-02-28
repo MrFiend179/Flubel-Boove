@@ -1,6 +1,6 @@
 
 # Flubel Boove
-
+ ## An advanced botting tool for both Minecraft and Discord featuring some amazing features in Minecraft-Bot
 
 ![Social](https://img.shields.io/twitter/follow/Flubel_?color=%231DA1F2&label=Twitter&style=for-the-badge)
 ![Social](https://img.shields.io/youtube/channel/subscribers/UCha9zIeWFX58QASlKFW3CwQ?style=for-the-badge)
@@ -20,9 +20,7 @@
 - Skin Blinker
 - Hotbar Managment
 - Playerlist
-- Chat
 - Go to Player (A new feature only made by us)
-- Colored chat
 - Ai Farming ability
 - Ai player follower
 - PvP
@@ -52,6 +50,11 @@
 | v1.0.1      |     ✅   |    ✅   |  ❌    |
 | v1.1.0      |     ✅   |    ❌   |  ❌    |
 | v1.2.0      |     ✅   |    ❌   |  ❌    |
+
+# Discord-connection
+Now features discord rich presence (can be toggles in the apps setting)
+
+![drpc](https://www.flubel.cf/flubelbooveimg/flbdc1bvrl.PNG)
 
 
 # ScreenShots
