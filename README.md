@@ -20,7 +20,7 @@
 - Skin Blinker
 - Hotbar Managment
 - Playerlist
-- Go to Player (A new feature only made by us)
+- Go to Cordinated x,y,z
 - Ai Farming ability
 - Ai player follower
 - PvP
@@ -41,6 +41,15 @@
 - truth about user command
 - ability to send messaged to specific channel
 - shows logs with channel name and server name
+
+# Farming
+
+This tutorial is a guide on how to use and how the AI farming feature works
+
+*(This feature is heavy and might cause the app to lag if used at low interval)*
+[![Watch the video](https://www.flubel.cf/imagestohost/tbfrmbtbflb.PNG)](https://www.youtube.com/watch?v=r33kTodGbeQ)
+
+The interval is how much time should a bot wait before cultivating or harvesting the next crop.
 
 ## Support
 
